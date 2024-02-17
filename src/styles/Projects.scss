@@ -1,0 +1,49 @@
+/* projects container styling */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px; /* Reduced padding */
+}
+
+/* project item styling */
+.project-item {
+  width: calc(
+    33.33% - 20px
+  ); /* Adjusted width and margin for responsive layout */
+  margin: 10px; /* Reduced margin */
+  transition: all 0.3s ease-in-out; /* Added transition for hover effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Updated shadow for depth */
+  border-radius: 8px; /* Reduced border radius */
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+    transform: translateY(-3px); /* Added subtle vertical movement on hover */
+  }
+}
+
+/* card body styling */
+.card-body {
+  background-color: #a2b0d4; /* Changed background color for better contrast */
+  color: #333; /* Adjusted text color for readability */
+  padding: 12px; /* Reduced padding for content spacing */
+  border-radius: 8px; /* Applied consistent border radius */
+}
+
+/* card title styling */
+.card-title {
+  font-size: 1.4rem; /* Slightly reduced font size for better balance */
+  margin-bottom: 8px; /* Adjusted margin for spacing */
+}
+
+/* card text styling */
+.card-text {
+  font-size: 0.9rem; /* Adjusted font size for improved readability */
+  margin-bottom: 10px; /* Adjusted margin for spacing */
+}
+
+/* button styling */
+.btn-primary,
+.btn-secondary {
+  padding: 6px 10px; /* Reduced padding for better size */
+  border-radius: 4px; /* Reduced border radius for softer corners */
+}

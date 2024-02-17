@@ -1,0 +1,30 @@
+/* Navbar styling */
+.navbar {
+  padding: 1rem 0; /* Added padding for better spacing */
+}
+
+/* Navbar brand styling */
+.navbar-brand img {
+  margin-right: 1rem; /* Added margin to separate logo from brand text */
+}
+
+/* Navbar links styling */
+.navbar-nav .nav-link {
+  font-size: 1.02rem; /* Adjusted font size for better readability */
+  margin-right: 1.5rem; /* Increased margin between nav links */
+}
+
+/* Navbar link hover effect */
+.navbar-nav .nav-link:hover {
+  color: #fff; /* Change text color on hover */
+}
+
+/* Navbar toggle button styling */
+.navbar-toggler {
+  border: none; /* Removed border from toggle button */
+}
+
+/* Navbar toggle icon styling */
+.navbar-toggler-icon {
+  background-color: #0a0101; /* Changed toggle icon color to white */
+}

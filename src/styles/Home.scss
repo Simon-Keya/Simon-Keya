@@ -1,0 +1,32 @@
+.container {
+  margin: 2rem;
+  padding: 2rem;
+
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .image {
+    max-width: 100%; /* Set maximum width to prevent image from exceeding container width */
+    height: auto; /* Set height to auto to maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-right: 2rem; /* Add margin to create space between image and text */
+  }
+
+  .text {
+    flex: 1; /* Fill remaining space */
+  }
+}

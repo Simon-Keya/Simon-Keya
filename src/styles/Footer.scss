@@ -1,0 +1,35 @@
+// styles/Footer.scss
+
+.footer {
+  background-color: #170f85;
+  color: #fff;
+  padding: 20px 0;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .social-links {
+      a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 15px;
+        font-size: 1.2rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .additional-info {
+      p {
+        font-size: 0.9rem;
+        margin: 5px 0;
+      }
+    }
+  }
+}
