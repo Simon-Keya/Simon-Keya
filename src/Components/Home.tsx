@@ -6,13 +6,6 @@ const Home = () => (
   <div className="container">
     <h1 className="title">Home</h1>
     <div className="content">
-    <img 
-        className="image img-fluid" /* Add img-fluid class for fluid scaling */
-        src="/assets/images/image.jpg" 
-        alt="Home" 
-        width="100" 
-        height="100" 
-      />
       <div className="text">
         <p className="subtitle">Welcome to Simon Keya's website! This website showcases my skills, projects, and experiences in a sleek and interactive manner. Feel free to explore!
           <br />
