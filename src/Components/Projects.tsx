@@ -91,7 +91,7 @@ const Projects: React.FC = () => {
           <Card.Body>
             <Card.Title>CHIPPER-API</Card.Title>
             <Card.Text>
-            Built a task management system API using FastAPI Python framework, PostgreSQL, and Swagger UI for documentation. Follow the link to Github to check out the source code.
+            Built an e-commerce API using FastAPI Python framework, PostgreSQL, and Swagger UI for documentation. Follow the link to Github to check out the source code.
             <a href="https://github.com/Simon-Keya/CHIPPER">Link</a>'
             </Card.Text>
           </Card.Body>
