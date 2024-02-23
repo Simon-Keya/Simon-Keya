@@ -24,6 +24,7 @@ const AboutMe = () => {
           <li>Task Management System API: Tech Stack: FastAPI (Python), PostgreSQL, Swagger UI.</li>
           <li>E-commerce API: Tech Stack: FastAPI (Python), PostgreSQL, Swagger UI. Also worked on e-commerce client: React, Bootstrap, TypeScript, Sass.</li>
         </ul>
+        <p>Check out my Github profile for the projects above.</p>
       </section>
       <section>
         <h2>Certifications</h2>
