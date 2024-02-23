@@ -42,8 +42,14 @@ const AboutMe = () => {
         <p>Freelancing Web Developer and Data Scientist.</p>
       </section>
       <section>
-        <h2>Hobbies</h2>
-        <p>Art(Drawing & painting), dancing, learning, cooking, gardening, introprospecting, mental spurring, hiking and exercise. Enjoy watching podcasts, awesome movies $ series, and listening to music. Always curious and creating.</p>
+        <h2>Interests & Hobbies</h2>
+        <ul>
+          <li>Psychology</li>
+          <li>Philosophy</li>
+          <li>Art</li>
+          <li>Learning</li>
+          <li>Intellectual Debates</li>
+        </ul> 
       </section>
       <section>
         <h2>Favorite Audio books/Reads</h2>
