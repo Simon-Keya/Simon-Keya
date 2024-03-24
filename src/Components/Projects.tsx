@@ -1,102 +1,97 @@
-// components/Projects.tsx
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import '../styles/Projects.scss';
+import Button from 'react-bootstrap/Button';
+import '../styles/Projects.scss'; // Import your custom stylesheet
+
+interface Project {
+  title: string;
+  image: string;
+  description: string;
+  sourceLink: string;
+  demoLink?: string; // Optional demo link property
+}
 
 const Projects: React.FC = () => {
+  const projects: Project[] = [
+    {
+      title: 'Nova',
+      image: '/assets/images/NOVA.png',
+      description:
+        'Built a prototype for an Internet Service Provider using React, Bootstrap, Node.js, Express.js, and MongoDB.',
+      sourceLink: 'https://github.com/Simon-Keya/Nova',
+      demoLink: 'https://your-nova-project-demo.com',
+    },
+    {
+      title: 'Kyn',
+      image: '/assets/images/KYN.png',
+      description:
+        'Developed a blog website API using Django Python framework and PostgreSQL.',
+      sourceLink: 'https://github.com/Simon-Keya/Kyn',
+      demoLink: 'https://your-nova-project-demo.com',
+    },
+    {
+      title: 'Ruby',
+      image: '/assets/images/RUBY.png',
+      description:
+        'Implemented an email spam classifier model using Jupyter Notebook.',
+      sourceLink: 'https://github.com/Simon-Keya/Ruby',
+      demoLink: 'https://your-nova-project-demo.com',
+    },
+    {
+      title: 'Portfolio',
+      image: '/assets/images/Portfolio.png',
+      description:
+        'Developed a prototype of a portfolio website using TypeScript, React, and Bootstrap SCSS.',
+      sourceLink: 'https://github.com/Simon-Keya/Portfolio',
+      demoLink: 'https://portfolio-eight-sigma-34.vercel.app/',
+    },
+    {
+      title: 'LUDE - Task Management System API',
+      image: '/assets/images/LUDE.png',
+      description:
+        'Built a task management system API using FastAPI Python framework, PostgreSQL, and Swagger UI for documentation.',
+      sourceLink: 'https://github.com/Simon-Keya/LUDE',
+      demoLink: 'https://your-nova-project-demo.com',
+    },
+    {
+      title: 'CHIPPER-client',
+      image: '/assets/images/CHIPPER.png',
+      description:
+        'Developed an e-commerce client using React, Bootstrap, TypeScript, and SCSS.',
+      sourceLink: 'https://github.com/Simon-Keya/Chipper-client',
+      demoLink: 'https://your-nova-project-demo.com',
+    },
+    {
+      title: 'CHIPPER-API',
+      image: '/assets/images/CHIPPER.png',
+      description:
+        'Built an e-commerce API using FastAPI Python framework, PostgreSQL, and Swagger UI for documentation.',
+      sourceLink: 'https://github.com/Simon-Keya/Chipper',
+      demoLink: 'https://your-nova-project-demo.com',
+    },
+  ];
+
   return (
     <div className="projects-container">
-
-      <div className="project-item">
-        <Card>
-          <Card.Img variant="top" src="/assets/images/NOVA.png" />
-          <Card.Body>
-            <Card.Title>Nova</Card.Title>
-            <Card.Text>
-            Built a prototype for an Internet Service Provider using React, Bootstrap, Node.js, Express.js, and MongoDB. Follow the link to Github to check out the source code.
-            <a href="https://github.com/Simon-Keya/Nova">Link</a>
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </div>
-
-      <div className="project-item">
-        <Card>
-          <Card.Img variant="top" src="/assets/images/KYN.png" />
-          <Card.Body>
-            <Card.Title>Kyn</Card.Title>
-            <Card.Text>
-            Developed a blog website API using Django Python framework and PostgreSQL. Follow the link to Github to check out the source code.
-            <a href="https://github.com/Simon-Keya/Kyn">Link</a>            
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </div>
-
-      <div className="project-item">
-        <Card>
-          <Card.Img variant="top" src="/assets/images/RUBY.png"/>
-          <Card.Body>
-            <Card.Title>Ruby</Card.Title>
-            <Card.Text>
-            Implemented an email spam classifier model using Jupyter Notebook. Follow the link to Github to check out the source.
-            <a href="https://github.com/Simon-Keya/Ruby">Link</a>
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </div>
-
-      <div className="project-item">
-        <Card>
-          <Card.Img variant="top" src="/assets/images/Portfolio.png" />
-          <Card.Body>
-            <Card.Title>Portfolio</Card.Title>
-            <Card.Text>
-            Developed a prototype of a portfolio website using TypeScript, React, and Bootstrap SCSS. Follow the link to Github to check out the source code.
-            <a href="https://github.com/Simon-Keya/Portfolio">Link</a>
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </div>
-
-      <div className="project-item">
-        <Card>
-          <Card.Img variant="top" src="/assets/images/LUDE.png" />
-          <Card.Body>
-            <Card.Title>LUDE - Task Management System API</Card.Title>
-            <Card.Text>
-            'Built a task management system API using FastAPI Python framework, PostgreSQL, and Swagger UI for documentation. Follow the link to Github to check out the source code.
-            <a href="https://github.com/Simon-Keya/LUDE">Link</a>
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </div>
-
-      <div className="project-item">
-        <Card>
-          <Card.Img variant="top" src="/assets/images/CHIPPER.png" />
-          <Card.Body>
-            <Card.Title>CHIPPER-client</Card.Title>
-            <Card.Text>
-            Developed an e-commerce client using React, Bootstrap, TypeScript, and SCSS. Follow the link to Github to check out the source code.
-            <a href="https://github.com/Simon-Keya/Chipper-client">Link</a>
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </div>
-
-      <div className="project-item">
-        <Card>
-          <Card.Img variant="top" src="/assets/images/CHIPPER.png" />
-          <Card.Body>
-            <Card.Title>CHIPPER-API</Card.Title>
-            <Card.Text>
-            Built an e-commerce API using FastAPI Python framework, PostgreSQL, and Swagger UI for documentation. Follow the link to Github to check out the source code.
-            <a href="https://github.com/Simon-Keya/CHIPPER">Link</a>'
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </div>
+      {projects.map((project) => (
+        <div className="project-item" key={project.title}>
+          <Card>
+            <Card.Img variant="top" src={project.image} />
+            <Card.Body>
+              <Card.Title>{project.title}</Card.Title>
+              <Card.Text>{project.description}</Card.Text>
+              <div className="project-buttons">
+                <Button variant="primary" href={project.sourceLink} target="_blank">
+                  Source
+                </Button>
+                <Button variant="outline-primary" href={project.demoLink} target="_blank">
+                  Demo
+                </Button>
+              </div>
+            </Card.Body>
+          </Card>
+        </div>
+      ))}
     </div>
   );
 };
