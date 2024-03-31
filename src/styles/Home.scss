@@ -1,24 +1,109 @@
-.container {
-  margin: 2rem;
-  padding: 2rem;
+/* Global styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  .title {
-    font-size: 2rem;
-    font-weight: bold;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-  .content {
+/* Container styles */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; /* Adjust overall width as needed */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px; /* Add basic padding */
+}
+
+/* Header styles */
+.home-header {
+  margin-bottom: 20px;
+  text-align: center;
+
+  .profile-section {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: center; /* Center vertically */
   }
 
-  .subtitle {
-    font-size: 1.2rem;
-    margin-top: 1rem;
+  .profile-image {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
   }
+}
 
-  .text {
-    flex: 1; /* Fill remaining space */
+.home-title {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #666;
+}
+
+/* Main content styles */
+.home-content {
+  flex: 1; /* Allow content to fill remaining space */
+  max-width: 800px; /* Set a maximum width */
+  margin: 0 auto; /* Center horizontally */
+
+  /* Responsiveness: Adjust for smaller screens */
+  @media (max-width: 768px) {
+    max-width: 100%; /* Full width on smaller screens */
   }
+}
+
+.home-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Highlights styles */
+.home-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.home-highlight {
+  margin: 10px;
+  text-align: center;
+  padding: 15px;
+  background: #f5f5f5; /* Adjust as needed */
+  border-radius: 5px;
+  color: #333; /* Set text color */
+
+  &:hover {
+    background: #e5e5e5; /* Adjust hover effect as desired */
+  }
+}
+
+.home-highlight span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/* Description container styles */
+.description-container {
+  font-size: 1.1rem;
+  text-align: left;
+  padding: 15px; /* Add padding */
+  border: 1px solid #ddd; /* Add a subtle border */
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Accessibility: Ensure sufficient color contrast */
+.home-highlight,
+.description-container {
+  color: #333; /* Set text color with good contrast */
 }

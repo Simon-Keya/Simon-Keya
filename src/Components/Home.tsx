@@ -1,28 +1,82 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+// src/components/Home.tsx
+
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserCircle, faCode, faLaptopCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Home.scss';
 
-const Home = () => (
-  <div className="container">
-    <h1 className="title">Home</h1>
-    <div className="content">
-      <div className="text">
-        <p className="subtitle">Welcome to Simon Keya's website! This website showcases my skills, projects, and experiences in a sleek and interactive manner. Feel free to explore!
-          <br />
+const Home = () => {
+  // Define sections and descriptions (update text as needed)
+  const sections = [
+    {
+      title: 'About',
+      description: 'Learn more about me and my background.',
+    },
+    {
+      title: 'Skills',
+      description: 'Discover the skills I possess and areas of expertise.',
+    },
+    {
+      title: 'Projects',
+      description: 'Explore the projects I\'ve worked on, including demos and descriptions.',
+    },
+    {
+      title: 'Contact',
+      description: 'Reach out to me for collaborations, inquiries, or just to say hello!',
+    },
+  ];
+
+  // State to manage currently displayed description
+  const [currentDescription, setCurrentDescription] = useState('');
+
+  const handleIconClick = (sectionTitle: string) => {
+    const description = sections.find((section) => section.title === sectionTitle)?.description;
+    setCurrentDescription(description || ''); // Set empty string if description not found
+  };
+
+  return (
+    <div className="home-container">
+      <header className="home-header">
+        <h1 className="home-title">Simon Keya</h1>
+        <p className="home-subtitle">Freelance Web Developer & Data Scientist</p>
+      </header>
+      <main className="home-content">
+        <p className="home-text">
+          Welcome to my website! Here, you'll find an interactive showcase of my skills, projects, and experiences. Feel
+          free to explore and discover my work.
+          <p>
           <br />
           Here are some sections you might find interesting:
-          <br />
-          <strong>About:</strong> Learn more about me and my background.
-          <br />
-          <strong>Skills:</strong> Discover the skills I possess and areas of expertise.
-          <br />
-          <strong>Projects:</strong> Explore the projects I've worked on, including demos and descriptions.
-          <br />
-          <strong>Contact:</strong> Reach out to me for collaborations, inquiries, or just to say hello!
+          </p>
         </p>
-      </div>
+        <div className="home-highlights">
+          {sections.map((section) => (
+            <a
+              href={`#${section.title.toLowerCase()}`} // Update links based on your sections
+              className="home-highlight"
+              key={section.title}
+              onClick={() => handleIconClick(section.title)}
+            >
+              <FontAwesomeIcon icon={
+                section.title === 'About' ? faUserCircle :
+                  section.title === 'Skills' ? faCode :
+                    section.title === 'Projects' ? faLaptopCode :
+                      faEnvelope
+              } />
+              <span>{section.title}</span>
+            </a>
+          ))}
+        </div>
+
+        {/* Description container (conditionally rendered) */}
+        {currentDescription && (
+          <div className="description-container">
+            <p>{currentDescription}</p>
+          </div>
+        )}
+      </main>
     </div>
-  </div>
-);
+  );
+};
 
 export default Home;
