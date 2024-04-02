@@ -3,49 +3,66 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px; /* Reduced padding */
+  padding: 10px;
+
+  /* Adjusted: Remove media query for smaller screens */
+  .project-item {
+    width: calc(50% - 20px); /* Adjusted width calculation */
+    margin: 10px;
+
+    @media (min-width: 768px) {
+      width: calc(50% - 20px);
+    }
+
+    @media (min-width: 1024px) {
+      width: calc(33.33% - 20px);
+    }
+  }
 }
 
 /* project item styling */
 .project-item {
-  width: calc(
-    33.33% - 20px
-  ); /* Adjusted width and margin for responsive layout */
-  margin: 10px; /* Reduced margin */
-  transition: all 0.3s ease-in-out; /* Added transition for hover effect */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Updated shadow for depth */
-  border-radius: 8px; /* Reduced border radius */
+  /* Adjusted: Removed width calculation */
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+
   &:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
-    transform: translateY(-3px); /* Added subtle vertical movement on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+  }
+
+  @media (min-width: 768px) {
+    margin: 20px; /* Increased margin for larger screens */
   }
 }
 
 /* card body styling */
 .card-body {
-  background-color: #a2b0d4; /* Changed background color for better contrast */
-  color: #333; /* Adjusted text color for readability */
-  padding: 12px; /* Reduced padding for content spacing */
-  border-radius: 8px; /* Applied consistent border radius */
+  background-color: #a2b0d4;
+  color: #333;
+  padding: 12px;
+  border-radius: 8px;
 }
 
 /* card title styling */
 .card-title {
-  font-size: 1.4rem; /* Slightly reduced font size for better balance */
-  margin-bottom: 8px; /* Adjusted margin for spacing */
+  font-size: 1.4rem;
+  margin-bottom: 8px;
 }
 
 /* card text styling */
 .card-text {
-  font-size: 0.9rem; /* Adjusted font size for improved readability */
-  margin-bottom: 10px; /* Adjusted margin for spacing */
+  font-size: 0.9rem;
+  margin-bottom: 10px;
 }
 
 /* button styling */
 .btn-primary,
 .btn-secondary {
-  padding: 6px 10px; /* Reduced padding for better size */
-  border-radius: 4px; /* Reduced border radius for softer corners */
+  padding: 6px 10px;
+  border-radius: 4px;
 }
 
 .project-buttons {
@@ -57,4 +74,15 @@
 .project-buttons .btn {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+/* Add hover effects for buttons */
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Add transition for a smooth hover effect */
+.btn {
+  transition: opacity 0.3s ease-in-out;
 }

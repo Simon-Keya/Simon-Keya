@@ -77,9 +77,9 @@ const AboutMe = () => {
       <section>
         <h2>Ongoing Studies</h2>
         <ul>
-          <li>Diploma in Python</li>
           <li>Diploma in Machine learning</li>
-          <li>Google Cloud Computing Certification</li>
+          <li>Advanced Diploma in Python Programming for the Novice to Expert </li>
+          <li>Diploma in DevOps Engineering - Kubernetes, Docker and Google Cloud</li>
         </ul>
       </section>
     </div>

@@ -13,29 +13,49 @@ a {
 /* Container styles */
 .home-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* New CSS class for the image container */
+.image-container {
+  display: flex;
   align-items: center;
-  width: 80%; /* Adjust overall width as needed */
-  margin: 0 auto; /* Center horizontally */
-  padding: 20px; /* Add basic padding */
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
 /* Header styles */
 .home-header {
   margin-bottom: 20px;
-  text-align: center;
+}
 
-  .profile-section {
-    display: flex;
-    align-items: center; /* Center vertically */
-  }
+.profile-section {
+  display: flex;
+  flex-direction: column;
+}
 
-  .profile-image {
-    width: 150px;
-    height: 200px;
-    object-fit: cover;
-    margin-right: 20px;
-  }
+.profile-image {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.profile-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .home-title {
@@ -51,14 +71,9 @@ a {
 
 /* Main content styles */
 .home-content {
-  flex: 1; /* Allow content to fill remaining space */
-  max-width: 800px; /* Set a maximum width */
-  margin: 0 auto; /* Center horizontally */
-
-  /* Responsiveness: Adjust for smaller screens */
-  @media (max-width: 768px) {
-    max-width: 100%; /* Full width on smaller screens */
-  }
+  flex-grow: 1;
+  max-width: 800px;
+  margin-right: 20px;
 }
 
 .home-text {
@@ -75,16 +90,19 @@ a {
 }
 
 .home-highlight {
+  flex: 1;
   margin: 10px;
   text-align: center;
   padding: 15px;
-  background: #f5f5f5; /* Adjust as needed */
+  background: #f5f5f5;
   border-radius: 5px;
-  color: #333; /* Set text color */
+  color: #333;
+  transition: transform 0.3s, background 0.3s;
+}
 
-  &:hover {
-    background: #e5e5e5; /* Adjust hover effect as desired */
-  }
+.home-highlight:hover {
+  transform: translateY(-5px);
+  background: #e5e5e5;
 }
 
 .home-highlight span {
@@ -96,8 +114,8 @@ a {
 .description-container {
   font-size: 1.1rem;
   text-align: left;
-  padding: 15px; /* Add padding */
-  border: 1px solid #ddd; /* Add a subtle border */
+  padding: 15px;
+  border: 1px solid #ddd;
   border-radius: 5px;
   margin-bottom: 20px;
 }
@@ -105,5 +123,28 @@ a {
 /* Accessibility: Ensure sufficient color contrast */
 .home-highlight,
 .description-container {
-  color: #333; /* Set text color with good contrast */
+  color: #333;
+}
+
+/* Styles for different screen sizes */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+  .image-container {
+    margin: 20px 0;
+  }
+
+  .home-content {
+    max-width: 100%;
+  }
+
+  .profile-image {
+    margin-bottom: 10px;
+  }
+
+  .home-highlight {
+    margin: 10px 0;
+  }
 }

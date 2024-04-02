@@ -1,5 +1,3 @@
-// src/components/Home.tsx
-
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle, faCode, faLaptopCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -36,11 +34,15 @@ const Home = () => {
 
   return (
     <div className="home-container">
+      <div className="image-container">
+          <img src="/assets/images/Home.png" alt="Profile" />
+        </div>
       <header className="home-header">
         <h1 className="home-title">Simon Keya</h1>
         <p className="home-subtitle">Freelance Web Developer & Data Scientist</p>
       </header>
       <main className="home-content">
+        
         <p className="home-text">
           Welcome to my website! Here, you'll find an interactive showcase of my skills, projects, and experiences. Feel
           free to explore and discover my work.
@@ -67,14 +69,12 @@ const Home = () => {
             </a>
           ))}
         </div>
-
-        {/* Description container (conditionally rendered) */}
-        {currentDescription && (
-          <div className="description-container">
-            <p>{currentDescription}</p>
-          </div>
-        )}
       </main>
+      {currentDescription && (
+        <div className="description-container">
+          <p>{currentDescription}</p>
+        </div>
+      )}
     </div>
   );
 };
