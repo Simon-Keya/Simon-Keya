@@ -14,6 +14,14 @@ interface Project {
 const Projects: React.FC = () => {
   const projects: Project[] = [
     {
+      title: 'OkumuGalore',
+      image: '/assets/images/Okumugalor.png',
+      description:
+        'An artist portfolio website. It showcases the exquisite paintings of the artist, providing a visually captivating gallery experience. With a modern and responsive design, OkumuGalore offers a seamless browsing experience for art enthusiasts and collectors alike.',
+      sourceLink: 'https://github.com/Simon-Keya/Okumu-Galor',
+      demoLink: 'https://okumu-galor.vercel.app',
+    },
+    {
       title: 'Nova',
       image: '/assets/images/NOVA.png',
       description:

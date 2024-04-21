@@ -1,81 +1,83 @@
-import React, { useState } from 'react';
-import { HiOutlineDownload, HiMail } from 'react-icons/hi';
-import '../styles/Contacts.scss'; // Import custom styles for contact section
+import React from 'react';
+
+import { Container, Row, Col, Button } from 'react-bootstrap';
+
+import { HiOutlineDownload } from 'react-icons/hi'; // Import HiOutlineDownload icon
 
 const Contact: React.FC = () => {
-  // Define state for contact form (optional)
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevent default form submission behavior
-    // Implement form submission logic here (e.g., send email, display success message)
-    console.log('Form submitted:', { name, email, message }); // Example logging
-    // Reset form fields
-    setName('');
-    setEmail('');
-    setMessage('');
-  };
-
   return (
-    <section id="contact" className="contact">
-      <h2>Contact</h2>
-      <p>
-        I'm open to new opportunities and collaborations. Feel free to reach out to me via LinkedIn or connect with me on GitHub. Let's create something amazing together!
-      </p>
-      <div className="contact-links">
-        <a href="/assets/files/Simon-Keya-resume.pdf" download="Simon-Keya-resume.pdf">
-          <HiOutlineDownload size="1.5rem" /> Resume
-        </a>
-        <a href="https://www.linkedin.com/in/simon-keya-9ab441237/" target="_blank" rel="noopener noreferrer">
-          LinkedIn
-        </a>
-        <a href="https://github.com/Simon-Keya" target="_blank" rel="noopener noreferrer">
-          GitHub
-        </a>
-      </div>
-
-      {/* Contact form (optional) */}
-      <h2>Get in Touch</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
-          <textarea
-            id="name"
-            name="name"
-            rows={1}
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
+    <section className="bg-gray-100 py-5">
+      <Container>
+        <div className="mb-4 text-center">
+          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+            Contact Me
+          </h2>
+          <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+            If you have any inquiries or concerns, feel free to get in touch with me. I'm open to new opportunities and collaborations. Let's create something amazing together!
+          </p>
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <textarea
-            id="email"
-            name="email"
-            rows={1}
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+        <Row className="g-4">
+          <Col md={3}>
+            <div className="p-4 bg-white rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-2">Email</h3>
+              <p className="text-gray-500">simonkeya78@gmail.com</p>
+            </div>
+          </Col>
+          <Col md={3}>
+            <div className="p-4 bg-white rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-2">Phone</h3>
+              <p className="text-gray-500">(0790) 448-452</p>
+            </div>
+          </Col>
+          <Col md={3}>
+            <div className="p-4 bg-white rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-2">Address</h3>
+              <p className="text-gray-500">Narok & Nairobi, Kenya</p>
+            </div>
+          </Col>
+          <Col md={3}>
+            <div className="p-4 bg-white rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-2">Social Media</h3>
+              <div className="social-media-links">
+                <Button
+                  variant="secondary"
+                  className="mr-2 mb-2"
+                  onClick={() => window.open("https://www.instagram.com/symon_keya/", "_blank")}
+                >
+                  Instagram
+                </Button>
+                <Button
+                  variant="secondary"
+                  className="mr-2 mb-2"
+                  onClick={() => window.open("https://www.twitter.com/SymonC137", "_blank")}
+                >
+                  Twitter
+                </Button>
+                <Button
+                  variant="secondary"
+                  onClick={() => window.open("https://linkedin.com/in/simon-keya/", "_blank")}
+                >
+                  LinkedIn
+                </Button>
+                <Button
+                  variant="secondary"
+                  className="ml-2"
+                  onClick={() => window.open("https://www.github.com/Simon-Keya", "_blank")}
+                >
+                  GitHub
+                </Button>
+              </div>
+            </div>
+          </Col>
+        </Row>
+        <div className="text-center mt-4">
+          <a href="/assets/files/Simon Keya's resume.pdf" download="Simon-Keya-resume.pdf">
+            <HiOutlineDownload size="1.5rem" /> {/* Added icon and download attribute */}
+            <h4 className="text-xl font-semibold">Resume</h4>
+              
+          </a>
         </div>
-        <div className="form-group">
-          <label htmlFor="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows={7}
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit">
-          <HiMail size="1.5rem" /> Send Message
-        </button>
-      </form>
+      </Container>
     </section>
   );
 };
