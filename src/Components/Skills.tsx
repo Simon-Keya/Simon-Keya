@@ -113,33 +113,10 @@ const Skills: React.FC = () => {
         </p>
        </li>
       </ul>
-      <h3>Additional Skills:</h3>
-      <ul>
-       <li>
-        <h4>Career Development</h4>
-        <p>
-         Understand the importance of crafting strong resumes and
-         cover letters, networking with recruiters, and building a
-         personal brand for successful data science job applications.
-         Actively participate in online communities and attend
-         relevant workshops to stay updated on industry trends.
-        </p>
-        </li>
-              <li>
-                <h4>Project Management</h4>
-                <p>
-                  Have experience working on data science projects
-                  independently, demonstrated by projects like email spam
-                  filter and targeted marketing model built using Jupyter
-                  Notebook. Proficient in project planning, data collection,
-                  and model evaluation.
-                </p>
-              </li>
-            </ul>
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="2">
-  <Accordion.Header>Information Science</Accordion.Header>
+    </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2">
+    <Accordion.Header>Information Science</Accordion.Header>
   <Accordion.Body>
     <ul>
       <li>
@@ -155,8 +132,7 @@ const Skills: React.FC = () => {
         <h4>E-Business</h4>
         <p>
           Familiar with e-business concepts and strategies, including
-          electronic commerce, online marketing, and digital business
-          models. Capable of leveraging technology to enhance business
+          electronic commerce. Capable of leveraging technology to enhance business
           operations and create value in digital environments.
         </p>
       </li>
@@ -165,19 +141,9 @@ const Skills: React.FC = () => {
         <p>
           Understanding of information security principles and best
           practices, including data confidentiality, integrity, and
-          availability. Proficient in implementing security measures to
+          availability. Implementing security measures to
           protect information assets from unauthorized access, disclosure,
           alteration, and destruction.
-        </p>
-      </li>
-      <li>
-        <h4>Project Management</h4>
-        <p>
-          Competent in project management principles and methodologies,
-          including planning, scheduling, budgeting, and resource
-          allocation. Experienced in leading and coordinating projects
-          to achieve organizational goals and deliver tangible outcomes
-          within scope, time, and budget constraints.
         </p>
       </li>
       <li>
@@ -205,29 +171,7 @@ const Skills: React.FC = () => {
         <p>
           Excellent verbal and written communication skills, with the
           ability to convey information clearly, concisely, and
-          persuasively. Skilled in tailoring communication style to
-          diverse audiences and contexts to achieve effective
-          interpersonal and professional interactions.
-        </p>
-      </li>
-      <li>
-        <h4>Human Communication</h4>
-        <p>
-          Proficient in interpersonal communication techniques and
-          strategies, including active listening, empathy, and conflict
-          resolution. Experienced in fostering positive relationships
-          and facilitating productive communication within teams and
-          across organizational hierarchies.
-        </p>
-      </li>
-      <li>
-        <h4>Marketing Communication</h4>
-        <p>
-          Knowledgeable in marketing communication principles and
-          practices, including branding, advertising, and promotional
-          strategies. Skilled in crafting compelling marketing messages
-          and campaigns to engage target audiences and drive desired
-          outcomes.
+          persuasively.
         </p>
       </li>
       <li>
@@ -247,27 +191,6 @@ const Skills: React.FC = () => {
           creating, packaging, and monetizing information products and
           services. Proficient in leveraging information assets to
           generate value and create sustainable revenue streams.
-        </p>
-      </li>
-      <li>
-        <h4>Marketing</h4>
-        <p>
-          Knowledgeable in marketing principles and techniques for
-          identifying customer needs, developing products and services,
-          and creating effective marketing strategies. Skilled in
-          conducting market research, segmentation, targeting, and
-          positioning to achieve competitive advantage and drive business
-          growth.
-        </p>
-      </li>
-      <li>
-        <h4>Information Consultancy</h4>
-        <p>
-          Capable of providing information consultancy services to
-          individuals, organizations, and communities. Skilled in
-          assessing information needs, designing solutions, and
-          implementing strategies to optimize information management
-          and enhance decision-making processes.
         </p>
       </li>
     </ul>

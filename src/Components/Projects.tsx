@@ -22,6 +22,14 @@ const Projects: React.FC = () => {
       demoLink: 'https://okumu-galor.vercel.app',
     },
     {
+      title: 'CHIPPER',
+      image: '/assets/images/ChipperAPI.png',
+      description:
+        'An e-commerce business backend that facilitates high-performance API endpoints, ensuring seamless communication between your frontend and database delivering quick responses to users.Built using FastAPI Python framework, PostgreSQL, and Swagger UI for documentation.',
+      sourceLink: 'https://github.com/Simon-Keya/Chipper',
+      demoLink: 'https://github.com/Simon-Keya/Chipper',
+    },
+    {
       title: 'Nova',
       image: '/assets/images/NOVA.png',
       description:
@@ -54,7 +62,7 @@ const Projects: React.FC = () => {
       demoLink: 'https://portfolio-eight-sigma-34.vercel.app/',
     },
     {
-      title: 'LUDE - Task Management System API',
+      title: 'LUDE - Task Management System ',
       image: '/assets/images/LUDE.png',
       description:
         'Built a task management system API using FastAPI Python framework, PostgreSQL, and Swagger UI for documentation.',
@@ -69,14 +77,7 @@ const Projects: React.FC = () => {
       sourceLink: 'https://github.com/Simon-Keya/Chipper-client',
       demoLink: 'https://your-nova-project-demo.com',
     },
-    {
-      title: 'CHIPPER-API',
-      image: '/assets/images/CHIPPER.png',
-      description:
-        'Built an e-commerce API using FastAPI Python framework, PostgreSQL, and Swagger UI for documentation.',
-      sourceLink: 'https://github.com/Simon-Keya/Chipper',
-      demoLink: 'https://your-nova-project-demo.com',
-    },
+    
   ];
 
   return (

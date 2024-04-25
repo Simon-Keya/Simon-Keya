@@ -1,56 +1,65 @@
-// components/AboutMe.tsx
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/About.scss';
 
 const AboutMe = () => {
   return (
     <div className="container">
-      <h1 className="title">About</h1>
+      <h2 className="title">About</h2>
       <section>
-        <p>Driven by an insatiable passion for innovation and problem-solving, I thrive on embracing fresh challenges as an enthusiastic learner. Balancing the roles of a dedicated web developer and an aspiring data scientist, my journey is fueled by curiosity and a commitment to excellence.
-
-        With a year of hands-on experience, I've immersed myself in crafting dynamic web applications and exploring the captivating realm of data science. Each project undertaken showcases my relentless pursuit of perfection and a keen eye for emerging technologies.</p>
-
-        <p>In web development, I navigate evolving trends with precision, constantly refining my skills and seizing every challenge as an opportunity for growth. As a data scientist, I revel in deciphering complex datasets, extracting valuable insights, and shaping them into narratives that drive informed decision-making.</p>
-      </section>
-      <section>
-        <h2>Highlighted Projects</h2>
-        <ul>
-          <li>Internet Service Provider Prototype: Tech Stack: React Bootstrap (JavaScript), Node.js, Express.js, MongoDB.</li>
-          <li>Blog Website: Tech Stack: Django (Python), PostgreSQL (Database), TypeScript, React (Client).</li>
-          <li>Email Spam Classifier: Tech Stack: Jupyter Notebook(Python), Anaconda.</li>
-          <li>Portfolio Website Prototype: Tech Stack: TypeScript, React, Bootstrap (Sass).</li>
-          <li>Task Management System API: Tech Stack: FastAPI (Python), PostgreSQL, Swagger UI.</li>
-          <li>E-commerce API: Tech Stack: FastAPI (Python), PostgreSQL, Swagger UI. Also worked on e-commerce client: React, Bootstrap, TypeScript, Sass.</li>
-        </ul>
-        <p>Check out my Github profile for the projects above.</p>
-      </section>
-      <section>
-        <h2>Certifications</h2>
-        <ul>
-          <li>Wildlearner.com Certificates: JavaScript, Python, HTML, CSS, React, Express.js, Redux, Node.js, NumPy, GitHub.</li>
-          <li>Alison Courses : Python Certification. Diploma in Data Science. Technical Writing Essentials Certification </li>
-        </ul>
-        <p>Check out my LinkedIn profile for the credentials.</p>
+        <p>
+          Driven by an insatiable passion for innovation and problem-solving, I thrive on embracing fresh challenges as an enthusiastic learner. Balancing the roles of a dedicated web developer and an aspiring data scientist, my journey is fueled by curiosity and a commitment to excellence.
+          With a year of hands-on experience, I've immersed myself in crafting dynamic web applications and exploring the captivating realm of data science. Each project undertaken showcases my relentless pursuit of perfection and a keen eye for emerging technologies.
+        </p>
+        <p>
+          In web development, I navigate evolving trends with precision, constantly refining my skills and seizing every challenge as an opportunity for growth. As a data scientist, I revel in deciphering complex datasets, extracting valuable insights, and shaping them into narratives that drive informed decision-making.
+        </p>
       </section>
       <section>
         <h2>Education</h2>
         <p>Bachelor of Science in Information Science from Maasai Mara University, Narok, Kenya.</p>
+        <h3>Diplomas</h3>
+        <ul>
+          <li>Diploma in Data Science (Alison Courses)</li>
+          <li>Diploma in Python Programming(Alison Courses)</li>
+          <li>Diploma in DevOps engineering (Alison Courses)</li>
+        </ul>
+        <h3>Certifications</h3>
+        <table className="certification-table">
+          <thead>
+            <tr>
+              <th>Platform</th>
+              <th>Certificate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Wildlearner</td>
+              <td>
+                JavaScript, Python, HTML, CSS, React, Express.js, Redux, Node.js, NumPy, GitHub
+              </td>
+            </tr>
+            <tr>
+              <td>Alison Courses</td>
+              <td>Python Certification, Django Fundamentals, Google Cloud Coputing Foundation, Technichal Writing Essentials, Psychology 101, </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Check out my LinkedIn profile for the credentials.</p>
       </section>
       <section>
         <h2>Experience</h2>
-        <p>Freelancing Web Developer and Data Scientist.</p>
+        <p>Freelancing Software Developer.</p>
       </section>
       <section>
         <h2>Interests & Hobbies</h2>
         <ul>
+          <li>Technology</li>
           <li>Psychology</li>
-          <li>Philosophy</li>
           <li>Art</li>
-          <li>Learning</li>
-          <li>Intellectual Debates</li>
-        </ul> 
+          <li>Philosophy</li>
+          <li>Knowledge</li>
+        </ul>
       </section>
       <section>
         <h2>Favorite Audio books/Reads</h2>
@@ -59,27 +68,25 @@ const AboutMe = () => {
           <li>"Laws of Human Nature" by Robert Greene</li>
           <li>"The 80/20 Principle" by Richard Coch</li>
           <li>"Atomic Habits" by James Clear</li>
-          <li>"Do It Today" by Darius Foroux</li>
         </ul>
         <p>Constantly exploring new books across genres.</p>
       </section>
       <section>
         <h2>Philosophical Quotes</h2>
         <ul>
+          <li>"Time stays long enough for anyone who will use it." — Leonardo da Vinci</li>
           <li>"The task of the modern educator is not to cut down jungles, but to irrigate deserts." — C.S. Lewis</li>
           <li>"The important thing is not to stop questioning. Curiosity has its own reason for existence." — Albert Einstein</li>
           <li>"Learning never exhausts the mind." — Leonardo da Vinci</li>
-          <li>“Only the pure in heart can make good soup.” — Ludwig van Beethoven</li>
-          <li>"Time stays long enough for anyone who will use it." — Leonardo da Vinci</li>
-          <li>"Thought constitutes the greatness of man. Man is a reed, the feeblest thing in nature, but he is a thinking reed." — Blaise Pascal</li>
         </ul>
       </section>
       <section>
         <h2>Ongoing Studies</h2>
         <ul>
+          <li>Diploma in Computer Networking</li>
+          <li>Certification in Linux and Shell script- beginner to advanced</li>
           <li>Diploma in Machine learning</li>
           <li>Advanced Diploma in Python Programming for the Novice to Expert </li>
-          <li>Diploma in DevOps Engineering - Kubernetes, Docker and Google Cloud</li>
         </ul>
       </section>
     </div>
