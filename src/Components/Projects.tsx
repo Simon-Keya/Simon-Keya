@@ -13,14 +13,7 @@ interface Project {
 
 const Projects: React.FC = () => {
   const projects: Project[] = [
-    {
-      title: 'OkumuGalore',
-      image: '/assets/images/Okumugalor.png',
-      description:
-        'An artist portfolio website. It showcases the exquisite paintings of the artist, providing a visually captivating gallery experience. With a modern and responsive design, OkumuGalore offers a seamless browsing experience for art enthusiasts and collectors alike.',
-      sourceLink: 'https://github.com/Simon-Keya/Okumu-Galor',
-      demoLink: 'https://okumu-galor.vercel.app',
-    },
+    
     {
       title: 'CHIPPER',
       image: '/assets/images/ChipperAPI.png',
@@ -30,12 +23,28 @@ const Projects: React.FC = () => {
       demoLink: 'https://github.com/Simon-Keya/Chipper',
     },
     {
+      title: 'Keyart',
+      image: '/assets/images/keya.png',
+      description:
+        'Embark on a visual odyssey through realms of imagination, where every click opens a gateway to a world of artistic wonder. Dive into my digital gallery, a tapestry of dreams woven with pixels and passion. From bold brushstrokes to delicate details, my art portfolio website is a celebration of creativity unleashed and boundaries dissolved.',
+      sourceLink: 'https://github.com/Simon-Keya/Keyart',
+      demoLink: 'https://keyart.vercel.app',
+    },
+    {
       title: 'Nova',
       image: '/assets/images/NOVA.png',
       description:
         'Built a prototype for an Internet Service Provider using React, Bootstrap, Node.js, Express.js, and MongoDB.',
       sourceLink: 'https://github.com/Simon-Keya/Nova',
       demoLink: 'https://your-nova-project-demo.com',
+    },
+    {
+      title: 'OkumuGalore',
+      image: '/assets/images/Okumugalor.png',
+      description:
+        'An artist portfolio website. It showcases the exquisite paintings of the artist, providing a visually captivating gallery experience. With a modern and responsive design, OkumuGalore offers a seamless browsing experience for art enthusiasts and collectors alike.',
+      sourceLink: 'https://github.com/Simon-Keya/Okumu-Galor',
+      demoLink: 'https://okumu-galor.vercel.app',
     },
     {
       title: 'Kyn',

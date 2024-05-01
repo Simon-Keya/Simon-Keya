@@ -41,7 +41,7 @@ const AboutMe = () => {
             </tr>
             <tr>
               <td>Alison Courses</td>
-              <td>Python Certification, Django Fundamentals, Google Cloud Coputing Foundation, Technichal Writing Essentials, Psychology 101, </td>
+              <td>Python Certification, Django Fundamentals, Google Cloud Computing Foundation, Technical Writing Essentials, Psychology 101, </td>
             </tr>
           </tbody>
         </table>
@@ -56,8 +56,9 @@ const AboutMe = () => {
         <ul>
           <li>Technology</li>
           <li>Psychology</li>
-          <li>Art</li>
+          <li><a href="https://keyart.vercel.app/">Art</a></li>
           <li>Philosophy</li>
+          <li>Self Improvement</li>
           <li>Knowledge</li>
         </ul>
       </section>
