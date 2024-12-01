@@ -44,7 +44,7 @@ const AboutMe = () => {
             </tr>
             <tr>
               <td>Alison Courses</td>
-              <td>Python Certification, React Native, Clinica Psychology, Italian, Django Fundamentals, Google Cloud Computing Foundation, Technical Writing Essentials, Psychology 101, </td>
+              <td>Python Certification, React Native, Clinical Psychology, Italian, Django Fundamentals, Google Cloud Computing Foundation, Technical Writing Essentials, Psychology 101, </td>
             </tr>
           </tbody>
         </table>
@@ -92,6 +92,7 @@ const AboutMe = () => {
           <li>Diploma in Artificial Intelligence ISO Maintainance</li>
           <li>French certificate</li>
           <li>Diploma in cogntive Therapy</li>
+          <li>Diploma in Food Techniques and Skills</li>
           <li>Diploma in Machine learning</li>
           <li>Advanced Diploma in Python Programming for the Novice to Expert </li>
         </ul>
