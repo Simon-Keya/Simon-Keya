@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
           <Col md={3}>
             <div className="p-4 bg-white rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-2">Address</h3>
-              <p className="text-gray-500">Narok & Nairobi, Kenya</p>
+              <p className="text-gray-500">Nairobi, Kenya</p>
             </div>
           </Col>
           <Col md={3}>

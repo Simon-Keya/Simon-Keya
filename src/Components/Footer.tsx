@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="additional-info">
           <p>&copy; {new Date().getFullYear()} Simon Keya. All rights reserved.</p>
-          <p>Based in Narok & Nairobi, Kenya</p>
+          <p>Based in Nairobi, Kenya</p>
         </div>
       </div>
     </footer>
