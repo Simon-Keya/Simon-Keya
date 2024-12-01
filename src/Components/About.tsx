@@ -23,6 +23,9 @@ const AboutMe = () => {
           <li>Diploma in Data Science (Alison Courses)</li>
           <li>Diploma in Python Programming(Alison Courses)</li>
           <li>Diploma in DevOps engineering (Alison Courses)</li>
+          <li>Diploma in Psychology (Alison Courses)</li>
+          <li>Diploma in Computer Networking (Alison Courses)</li>
+          <li>Diploma in CyberSecurity (Alison Courses)</li>
         </ul>
         <h3>Certifications</h3>
         <table className="certification-table">
@@ -41,7 +44,7 @@ const AboutMe = () => {
             </tr>
             <tr>
               <td>Alison Courses</td>
-              <td>Python Certification, Django Fundamentals, Google Cloud Computing Foundation, Technical Writing Essentials, Psychology 101, </td>
+              <td>Python Certification, React Native, Clinica Psychology, Italian, Django Fundamentals, Google Cloud Computing Foundation, Technical Writing Essentials, Psychology 101, </td>
             </tr>
           </tbody>
         </table>
@@ -49,17 +52,17 @@ const AboutMe = () => {
       </section>
       <section>
         <h2>Experience</h2>
-        <p>Freelancing Software Developer.</p>
+        <p>Freelancing Software Engineer.</p>
       </section>
       <section>
         <h2>Interests & Hobbies</h2>
         <ul>
-          <li>Technology</li>
-          <li>Psychology</li>
+        <li><a href="https://keya-simon.vercel.app/">Technology</a></li>
+        <li><a href="https://keya-simon.vercel.app/">Psychology</a></li>
           <li><a href="https://keyart.vercel.app/">Art</a></li>
-          <li>Philosophy</li>
-          <li>Self Improvement</li>
-          <li>Knowledge</li>
+          <li><a href="https://keya-simon.vercel.app/">Self Improvememnt</a></li>
+          <li><a href="https://keya-simon.vercel.app/">Knowledge</a></li>
+          
         </ul>
       </section>
       <section>

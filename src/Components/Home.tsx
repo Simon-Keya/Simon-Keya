@@ -40,7 +40,7 @@ const Home = () => {
       <main className="home-content">
       <header className="home-header">
         <h1 className="home-title">Simon Keya</h1>
-        <p className="home-subtitle">Software Developer</p>
+        <p className="home-subtitle">Software Engineer</p>
       </header>
         
      <p className="home-text">
