@@ -87,8 +87,11 @@ const AboutMe = () => {
       <section>
         <h2>Ongoing Studies</h2>
         <ul>
-          <li>Diploma in Computer Networking</li>
-          <li>Certification in Linux and Shell script- beginner to advanced</li>
+        <li>Diploma in Artificial Intelligence</li>
+          <li>Advanced Diploma in Computer Networking</li>
+          <li>Diploma in Artificial Intelligence ISO Maintainance</li>
+          <li>French certificate</li>
+          <li>Diploma in cogntive Therapy</li>
           <li>Diploma in Machine learning</li>
           <li>Advanced Diploma in Python Programming for the Novice to Expert </li>
         </ul>
