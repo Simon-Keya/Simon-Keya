@@ -9,7 +9,7 @@ const AboutMe = () => {
       <section>
         <p>
           Driven by an insatiable passion for innovation and problem-solving, I thrive on embracing fresh challenges as an enthusiastic learner. Balancing the roles of a dedicated Software developer and an aspiring data scientist, my journey is fueled by curiosity and a commitment to excellence.
-          With a year of hands-on experience, I've immersed myself in crafting dynamic software applications and exploring the captivating realm of data science. Each project undertaken showcases my relentless pursuit of perfection and a keen eye for emerging technologies.
+          With a year of hands-on experience, I've immersed myself in crafting dynamic software applications and exploring the captivating realm of Artificial Intelligence. Each project undertaken showcases my relentless pursuit of perfection and a keen eye for emerging technologies.
         </p>
         <p>
           In software development, I navigate evolving trends with precision, constantly refining my skills and seizing every challenge as an opportunity for growth. As a data scientist, I revel in deciphering complex datasets, extracting valuable insights, and shaping them into narratives that drive informed decision-making.
@@ -57,11 +57,11 @@ const AboutMe = () => {
       <section>
         <h2>Interests & Hobbies</h2>
         <ul>
-        <li><a href="https://keya-simon.vercel.app/Technology">Technology</a></li>
-        <li><a href="https://keya-simon.vercel.app/Psychology">Psychology</a></li>
+        <li><a href="https://keya-simon.vercel.app/technology">Technology</a></li>
+        <li><a href="https://keya-simon.vercel.app/psychology">Psychology</a></li>
           <li><a href="https://keyart.vercel.app/">Art</a></li>
-          <li><a href="https://keya-simon.vercel.app/Self Improvement">Self Improvememnt</a></li>
-          <li><a href="https://keya-simon.vercel.app/">Knowledge</a></li>
+          <li><a href="https://keya-simon.vercel.app/self improvement">Self Improvememnt</a></li>
+          <li><a href="https://keya-simon.vercel.app/blog">Knowledge</a></li>
           
         </ul>
       </section>
