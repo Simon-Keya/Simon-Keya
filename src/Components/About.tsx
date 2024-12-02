@@ -8,7 +8,7 @@ const AboutMe = () => {
       <h2 className="title">About</h2>
       <section>
         <p>
-          Driven by an insatiable passion for innovation and problem-solving, I thrive on embracing fresh challenges as an enthusiastic learner. Balancing the roles of a dedicated Sofatware developer and an aspiring data scientist, my journey is fueled by curiosity and a commitment to excellence.
+          Driven by an insatiable passion for innovation and problem-solving, I thrive on embracing fresh challenges as an enthusiastic learner. Balancing the roles of a dedicated Software developer and an aspiring data scientist, my journey is fueled by curiosity and a commitment to excellence.
           With a year of hands-on experience, I've immersed myself in crafting dynamic software applications and exploring the captivating realm of data science. Each project undertaken showcases my relentless pursuit of perfection and a keen eye for emerging technologies.
         </p>
         <p>
@@ -57,10 +57,10 @@ const AboutMe = () => {
       <section>
         <h2>Interests & Hobbies</h2>
         <ul>
-        <li><a href="https://keya-simon.vercel.app/">Technology</a></li>
-        <li><a href="https://keya-simon.vercel.app/">Psychology</a></li>
+        <li><a href="https://keya-simon.vercel.app/Technology">Technology</a></li>
+        <li><a href="https://keya-simon.vercel.app/Psychology">Psychology</a></li>
           <li><a href="https://keyart.vercel.app/">Art</a></li>
-          <li><a href="https://keya-simon.vercel.app/">Self Improvememnt</a></li>
+          <li><a href="https://keya-simon.vercel.app/Self Improvement">Self Improvememnt</a></li>
           <li><a href="https://keya-simon.vercel.app/">Knowledge</a></li>
           
         </ul>
