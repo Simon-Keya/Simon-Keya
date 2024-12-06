@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle, faCode, faLaptopCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Head from 'next/head'; // Use this for SEO meta tags in Next.js
+import { Helmet } from 'react-helmet'; // React Helmet for meta tags
 import '../styles/Home.scss';
 
 const Home = () => {
@@ -34,18 +34,18 @@ const Home = () => {
   return (
     <>
       {/* SEO Meta Tags */}
-      <Head>
+      <Helmet>
         <title>Simon Keya | Software Engineer, Computer Scientist, Psychologist</title>
         <meta name="description" content="Explore Simon Keya's portfolio: skills, projects, and professional journey as a Software Engineer, Computer Scientist, and Psychologist." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://simon-keya.vercel.app/" />
         <meta property="og:title" content="Simon Keya's Portfolio" />
-        <meta property="og:description" content="Discover Simon Keya's work and expertise in software engineering, computer science, psychology, and entrepreneurship." />
+        <meta property="og:description" content="Discover Simon Keya's work and expertise in software engineering, psychology, and entrepreneurship." />
         <meta property="og:image" content="/assets/images/Home.png" />
-        <meta property="og:url" content="https://yourdomain.com/" />
+        <meta property="og:url" content="https://simon-keya.vercel.app/" />
         <meta property="og:type" content="website" />
-      </Head>
+      </Helmet>
 
       <div className="home-container">
         <div className="image-container">
