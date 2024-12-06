@@ -3,119 +3,149 @@ import Accordion from 'react-bootstrap/Accordion';
 import '../styles/Skills.scss';
 
 const Skills: React.FC = () => {
- return (
-  <div>
-   <Accordion defaultActiveKey="0">
-    <Accordion.Item eventKey="0">
-     <Accordion.Header>Web Development</Accordion.Header>
-     <Accordion.Body>
-      <h2>Front-End Technologies:</h2>
-      <ul>
-       <li>
-        <h4>HTML5 & CSS3</h4>
-        <p>Extensive experience building user interfaces with semantic HTML and modern CSS practices.</p>
-       </li>
-       <li>
-        <h4>JavaScript</h4>
-        <p>Proficient in vanilla JavaScript and leveraging modern frameworks like React.</p>
-       </li>
-       <li>
-        <h4>React</h4>
-        <p>Comfortable building interactive and dynamic user interfaces with React and its ecosystem.</p>
-       </li>
-       <li>
-        <h4>TypeScript</h4>
-        <p>Utilizing TypeScript for enhanced type safety and code maintainability in frontend projects.</p>
-       </li>
-       <li>
-        <h4>Bootstrap</h4>
-        <p>Proficient in using Bootstrap for rapid frontend development and responsive design.</p>
-       </li>
-      </ul>
-      <h2>Back-End Technologies:</h2>
-<ul>
-  <li>
-    <h4>FastAPI</h4>
-    <p>Experience building APIs with the modern and performant FastAPI framework.</p>
-  </li>
-  <li>
-    <h4>Django</h4>
-    <p>Understanding of Django, a popular Python framework for building web applications.</p>
-  </li>
-  <li>
-    <h4>PostgreSQL</h4>
-    <p>Comfortable working with PostgreSQL databases for data storage and retrieval.</p>
-  </li>
-  <li>
-    <h4>Swagger UI</h4>
-    <p>Experience using Swagger UI for API documentation and service discovery.</p>
-  </li>
-  <li>
-    <h4>Node.js</h4>
-    <p>Proficient in using Node.js for server-side JavaScript development.</p>
-  </li>
-  <li>
-    <h4>Express.js</h4>
-    <p>Experience building web applications and APIs using the Express.js framework.</p>
-    </li>
-</ul>
-<h3>Version Control System (VCS)</h3>
-  <ul>
-      <li>
-        <p>Familiar with Git version control system and its features. Proficient in using Git commands for version management, branching, merging, and collaboration.</p>
-      </li>
-      <li>
-        <p>Additionally, familiar with GUI tools like GitHub Desktop for managing repositories and collaborating on projects.</p>
-      </li>
-    </ul>
- </Accordion.Body>
-    </Accordion.Item>
-    <Accordion.Item eventKey="1">
-     <Accordion.Header>Data Science</Accordion.Header>
-     <Accordion.Body>
-      <ul>
-       <li>
-        <h4>Python Programming</h4>
-        <p>
-         Experienced using Python for essential data science tasks like
-         data manipulation, analysis, and visualization. Skilled in
-         using libraries like NumPy, Pandas, and Matplotlib.
+  return (
+    <section className="skills-section" role="region" aria-labelledby="skills-heading">
+      <header className="text-center mb-4">
+        <h1 id="skills-heading" className="text-3xl font-bold">
+          My Skills and Expertise
+        </h1>
+        <p className="text-gray-600">
+          A detailed overview of my technical and professional competencies across various domains.
         </p>
-       </li>
-       <li>
-        <h4>Statistics and Probability</h4>
-        <p>
-         Possess knowledge of both descriptive and inferential
-         statistics, including distributions and measures of asymmetry.
-         This enables effective data understanding and analysis.
-         Confident in using tools like hypothesis testing and
-         correlation analysis.
-        </p>
-       </li>
-       <li>
-        <h4>Data Visualization</h4>
-        <p>
-         Able to create informative and insightful visualizations using
-         Python libraries like Matplotlib, Seaborn, and Pandas. Can
-         tailor visualizations to specific audiences and effectively
-         communicate data insights.
-        </p>
-       </li>
-       <li>
-        <h4>Machine Learning</h4>
-        <p>
-         While not explicitly mentioned, projects
-         demonstrate experience building machine learning models
-         (e.g., spam filter) and applying them to specific tasks
-         (e.g., targeted marketing). Possess fundamental
-         understanding of machine learning algorithms and
-         can adapt knowledge to new problems.
-        </p>
-       </li>
-      </ul>
-    </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="2">
+      </header>
+      <div className="skills-container">
+        <Accordion defaultActiveKey="0">
+          {/* Web Development Accordion */}
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>
+              <h2 className="accordion-title">Web Development</h2>
+            </Accordion.Header>
+            <Accordion.Body>
+              <section aria-labelledby="web-dev-heading">
+                <h2 id="web-dev-heading" className="text-2xl font-semibold">
+                  Front-End Technologies
+                </h2>
+                <ul>
+                  <li>
+                    <h3>HTML5 & CSS3</h3>
+                    <p>
+                      Extensive experience building user interfaces with semantic HTML and modern CSS practices.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>JavaScript</h3>
+                    <p>
+                      Proficient in vanilla JavaScript and leveraging modern frameworks like React.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>React</h3>
+                    <p>
+                      Comfortable building interactive and dynamic user interfaces with React and its ecosystem.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>TypeScript</h3>
+                    <p>
+                      Utilizing TypeScript for enhanced type safety and code maintainability in frontend projects.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>Bootstrap</h3>
+                    <p>
+                      Proficient in using Bootstrap for rapid frontend development and responsive design.
+                    </p>
+                  </li>
+                </ul>
+
+                <h2 className="text-2xl font-semibold">Back-End Technologies</h2>
+                <ul>
+                  <li>
+                    <h3>FastAPI</h3>
+                    <p>Experience building APIs with the modern and performant FastAPI framework.</p>
+                  </li>
+                  <li>
+                    <h3>Django</h3>
+                    <p>Understanding of Django, a popular Python framework for building web applications.</p>
+                  </li>
+                  <li>
+                    <h3>PostgreSQL</h3>
+                    <p>Comfortable working with PostgreSQL databases for data storage and retrieval.</p>
+                  </li>
+                  <li>
+                    <h3>Swagger UI</h3>
+                    <p>Experience using Swagger UI for API documentation and service discovery.</p>
+                  </li>
+                  <li>
+                    <h3>Node.js</h3>
+                    <p>Proficient in using Node.js for server-side JavaScript development.</p>
+                  </li>
+                  <li>
+                    <h3>Express.js</h3>
+                    <p>Experience building web applications and APIs using the Express.js framework.</p>
+                  </li>
+                </ul>
+
+                <h2 className="text-2xl font-semibold">Version Control Systems</h2>
+                <ul>
+                  <li>
+                    <p>
+                      Proficient in Git and its features, including version management, branching, and collaboration.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Experienced with GUI tools like GitHub Desktop for managing repositories efficiently.
+                    </p>
+                  </li>
+                </ul>
+              </section>
+            </Accordion.Body>
+          </Accordion.Item>
+
+          {/* Data Science Accordion */}
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>
+              <h2 className="accordion-title">Data Science</h2>
+            </Accordion.Header>
+            <Accordion.Body>
+              <section aria-labelledby="data-science-heading">
+                <h2 id="data-science-heading" className="text-2xl font-semibold">
+                  Data Science Expertise
+                </h2>
+                <ul>
+                  <li>
+                    <h3>Python Programming</h3>
+                    <p>
+                      Skilled in using Python for data manipulation, analysis, and visualization with libraries like
+                      NumPy, Pandas, and Matplotlib.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>Statistics and Probability</h3>
+                    <p>
+                      Knowledge of descriptive and inferential statistics, enabling effective data analysis and insight
+                      extraction.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>Data Visualization</h3>
+                    <p>
+                      Expertise in crafting insightful visualizations using tools like Matplotlib and Seaborn.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>Machine Learning</h3>
+                    <p>
+                      Experience building and applying machine learning models for tasks such as spam filtering and
+                      targeted marketing.
+                    </p>
+                  </li>
+                </ul>
+              </section>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="2">
     <Accordion.Header>Information Science</Accordion.Header>
   <Accordion.Body>
     <ul>
@@ -258,9 +288,11 @@ const Skills: React.FC = () => {
     </ul>
   </Accordion.Body>
 </Accordion.Item> 
-        {/* Add more Accordion.Item components for other sections */}
-      </Accordion>
-    </div>
+
+          {/* Add similar structured Accordion Items for other sections */}
+        </Accordion>
+      </div>
+    </section>
   );
 };
 

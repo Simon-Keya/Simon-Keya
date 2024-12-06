@@ -13,7 +13,14 @@ interface Project {
 
 const Projects: React.FC = () => {
   const projects: Project[] = [
-    
+    {
+      title: 'CHIPPER',
+      image: '/assets/images/ChipperAPI.png',
+      description:
+        'An e-commerce business backend that facilitates high-performance API endpoints, ensuring seamless communication between your frontend and database delivering quick responses to users. Built using FastAPI Python framework, PostgreSQL, and Swagger UI for documentation.',
+      sourceLink: 'https://github.com/Simon-Keya/Chipper',
+      demoLink: 'https://github.com/Simon-Keya/Chipper',
+    },
     {
       title: 'CHIPPER',
       image: '/assets/images/ChipperAPI.png',
@@ -31,12 +38,12 @@ const Projects: React.FC = () => {
       demoLink: 'https://keyart.vercel.app',
     },
     {
-      title: 'Nova',
-      image: '/assets/images/NOVA.png',
+      title: 'Karen Hats',
+      image: '/assets/images/Karen hats.png',
       description:
-        'Built a prototype for an Internet Service Provider using React, Bootstrap, Node.js, Express.js, and MongoDB.',
-      sourceLink: 'https://github.com/Simon-Keya/Nova',
-      demoLink: 'https://your-nova-project-demo.com',
+        'An eccomerce website for purchasing and ordering hats built using Next.js, Tailwind, Daisy UI, Nest.js and postgresql',
+      sourceLink: 'https://github.com/Simon-Keya/Karen-Hats',
+      demoLink: 'https://karen-hats.vercel.app',
     },
     {
       title: 'OkumuGalore',
@@ -47,12 +54,12 @@ const Projects: React.FC = () => {
       demoLink: 'https://okumu-galor.vercel.app',
     },
     {
-      title: 'Kyn',
-      image: '/assets/images/KYN.png',
+      title: 'Keya Simon',
+      image: '/assets/images/Keya Simon.png',
       description:
-        'Developed a blog website API using Django Python framework and PostgreSQL.',
-      sourceLink: 'https://github.com/Simon-Keya/Kyn',
-      demoLink: 'https://your-nova-project-demo.com',
+        'Developed a personal blog website fro sharing insights on psychology, self improvememt, philosophy,technology and art built using react tailwind css.',
+      sourceLink: 'https://github.com/Simon-Keya/Keya-Simon',
+      demoLink: 'https://keya-simon.vercel.app',
     },
     {
       title: 'Ruby',
@@ -86,31 +93,70 @@ const Projects: React.FC = () => {
       sourceLink: 'https://github.com/Simon-Keya/Chipper-client',
       demoLink: 'https://your-nova-project-demo.com',
     },
-    
+    // Additional projects...
   ];
 
   return (
-    <div className="projects-container">
-      {projects.map((project) => (
-        <div className="project-item" key={project.title}>
-          <Card>
-            <Card.Img variant="top" src={project.image} />
-            <Card.Body>
-              <Card.Title>{project.title}</Card.Title>
-              <Card.Text>{project.description}</Card.Text>
-              <div className="project-buttons">
-                <Button variant="primary" href={project.sourceLink} target="_blank">
-                  Source
-                </Button>
-                <Button variant="outline-primary" href={project.demoLink} target="_blank">
-                  Demo
-                </Button>
-              </div>
-            </Card.Body>
-          </Card>
-        </div>
-      ))}
-    </div>
+    <section className="projects-container" role="region" aria-labelledby="projects-heading">
+      <header className="text-center mb-4">
+        <h2 id="projects-heading" className="text-3xl font-extrabold tracking-tight">
+          My Projects
+        </h2>
+        <p className="text-gray-600">
+          Explore the projects I’ve built, ranging from e-commerce systems to personal portfolios and API solutions.
+        </p>
+      </header>
+      <div className="projects-grid">
+        {projects.map((project) => (
+          <article
+            key={project.title}
+            className="project-item"
+            role="article"
+            aria-labelledby={`${project.title.replace(/\s+/g, '-')}-title`}
+          >
+            <Card>
+              {/* Image with Alt Text */}
+              <Card.Img
+                variant="top"
+                src={project.image}
+                alt={`${project.title} preview`}
+                className="project-image"
+                loading="lazy"
+              />
+              <Card.Body>
+                <Card.Title id={`${project.title.replace(/\s+/g, '-')}-title`}>
+                  {project.title}
+                </Card.Title>
+                <Card.Text>{project.description}</Card.Text>
+                {/* Project Buttons */}
+                <div className="project-buttons">
+                  <Button
+                    variant="primary"
+                    href={project.sourceLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`View source code for ${project.title}`}
+                  >
+                    Source
+                  </Button>
+                  {project.demoLink && (
+                    <Button
+                      variant="outline-primary"
+                      href={project.demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View demo for ${project.title}`}
+                    >
+                      Demo
+                    </Button>
+                  )}
+                </div>
+              </Card.Body>
+            </Card>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 };
 
