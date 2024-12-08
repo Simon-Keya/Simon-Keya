@@ -25,33 +25,23 @@ const Skills: React.FC = () => {
               <ul>
                 <li>
                   <h4>HTML5 & CSS3</h4>
-                  <p>
-                    Extensive experience building user interfaces with semantic HTML and modern CSS practices.
-                  </p>
+                  <p>Extensive experience building user interfaces with semantic HTML and modern CSS practices.</p>
                 </li>
                 <li>
                   <h4>JavaScript</h4>
-                  <p>
-                    Proficient in vanilla JavaScript and leveraging modern frameworks like React.
-                  </p>
+                  <p>Proficient in vanilla JavaScript and leveraging modern frameworks like React.</p>
                 </li>
                 <li>
                   <h4>React</h4>
-                  <p>
-                    Comfortable building interactive and dynamic user interfaces with React and its ecosystem.
-                  </p>
+                  <p>Comfortable building interactive and dynamic user interfaces with React and its ecosystem.</p>
                 </li>
                 <li>
                   <h4>TypeScript</h4>
-                  <p>
-                    Utilizing TypeScript for enhanced type safety and code maintainability in frontend projects.
-                  </p>
+                  <p>Utilizing TypeScript for enhanced type safety and code maintainability in frontend projects.</p>
                 </li>
                 <li>
                   <h4>Bootstrap</h4>
-                  <p>
-                    Proficient in using Bootstrap for rapid frontend development and responsive design.
-                  </p>
+                  <p>Proficient in using Bootstrap for rapid frontend development and responsive design.</p>
                 </li>
               </ul>
 
@@ -101,51 +91,78 @@ const Skills: React.FC = () => {
               <ul>
                 <li>
                   <h4>Python Programming</h4>
-                  <p>
-                    Skilled in Python for data manipulation, analysis, and visualization with libraries like NumPy,
-                    Pandas, and Matplotlib.
-                  </p>
+                  <p>Skilled in Python for data manipulation, analysis, and visualization with libraries like NumPy, Pandas, and Matplotlib.</p>
                 </li>
                 <li>
                   <h4>Statistics and Probability</h4>
-                  <p>
-                    Knowledge of descriptive and inferential statistics for effective data analysis.
-                  </p>
+                  <p>Knowledge of descriptive and inferential statistics for effective data analysis.</p>
                 </li>
                 <li>
                   <h4>Data Visualization</h4>
-                  <p>
-                    Expertise in crafting insightful visualizations using tools like Matplotlib and Seaborn.
-                  </p>
+                  <p>Expertise in crafting insightful visualizations using tools like Matplotlib and Seaborn.</p>
                 </li>
                 <li>
                   <h4>Machine Learning</h4>
-                  <p>
-                    Experience building and applying machine learning models for various use cases.
-                  </p>
+                  <p>Experience building and applying machine learning models for various use cases.</p>
                 </li>
               </ul>
             </Accordion.Body>
           </Accordion.Item>
 
-          {/* Other Skills */}
+          {/* DevOps Engineering Accordion */}
           <Accordion.Item eventKey="2">
-            <Accordion.Header>Information Science</Accordion.Header>
+            <Accordion.Header>
+              <h2 className="accordion-title">DevOps Engineering</h2>
+            </Accordion.Header>
+            <Accordion.Body>
+              <h3 className="text-2xl font-semibold">DevOps Tools</h3>
+              <ul>
+                <li>
+                  <h4>Docker</h4>
+                  <p>Proficient in containerizing applications for scalable deployments.</p>
+                </li>
+                <li>
+                  <h4>Kubernetes</h4>
+                  <p>Experience in orchestrating containers using Kubernetes for efficient workload management.</p>
+                </li>
+                <li>
+                  <h4>Google Cloud</h4>
+                  <p>Knowledgeable in leveraging Google Cloud services for infrastructure and application deployment.</p>
+                </li>
+              </ul>
+            </Accordion.Body>
+          </Accordion.Item>
+
+          {/* Cloud Computing Accordion */}
+          <Accordion.Item eventKey="3">
+            <Accordion.Header>
+              <h2 className="accordion-title">Cloud Computing</h2>
+            </Accordion.Header>
             <Accordion.Body>
               <ul>
                 <li>
-                  <h4>Information Technology</h4>
-                  <p>
-                    Solid foundation in IT concepts such as networking, operating systems, and web development.
-                  </p>
+                  <h4>Google Cloud</h4>
+                  <p>Skilled in using Google Cloud for scalable cloud-based solutions and services.</p>
+                </li>
+              </ul>
+            </Accordion.Body>
+          </Accordion.Item>
+
+          {/* Psychology Accordion */}
+          <Accordion.Item eventKey="4">
+            <Accordion.Header>
+              <h2 className="accordion-title">Psychology</h2>
+            </Accordion.Header>
+            <Accordion.Body>
+              <ul>
+                <li>
+                  <h4>Human Behavior Analysis</h4>
+                  <p>Studying and analyzing patterns in human behavior for better understanding and solutions.</p>
                 </li>
                 <li>
-                  <h4>E-Business</h4>
-                  <p>
-                    Familiar with e-business strategies and leveraging technology for business value.
-                  </p>
+                  <h4>Decision-Making Psychology</h4>
+                  <p>Exploring how individuals and groups make choices under various conditions.</p>
                 </li>
-                {/* Add more items here */}
               </ul>
             </Accordion.Body>
           </Accordion.Item>
