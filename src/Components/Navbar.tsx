@@ -7,7 +7,13 @@ import { NavLink } from 'react-router-dom';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import '../styles/Navbar.scss';
 
-const SocialMediaIcons = ({ github, linkedin }) => {
+// Define prop types for SocialMediaIcons
+type SocialMediaIconsProps = {
+  github: string;
+  linkedin: string;
+};
+
+const SocialMediaIcons: React.FC<SocialMediaIconsProps> = ({ github, linkedin }) => {
   return (
     <div className="social-media-icons">
       <a
@@ -34,7 +40,7 @@ const SocialMediaIcons = ({ github, linkedin }) => {
   );
 };
 
-const CustomNavbar = () => {
+const CustomNavbar: React.FC = () => {
   const [expanded, setExpanded] = useState(false);
 
   const handleNavbarToggle = () => {
