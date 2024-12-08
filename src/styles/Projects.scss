@@ -1,88 +1,146 @@
-/* projects container styling */
+/* Projects container styling */
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 10px;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
 
-  /* Adjusted: Remove media query for smaller screens */
-  .project-item {
-    width: calc(50% - 20px); /* Adjusted width calculation */
-    margin: 10px;
+  header {
+    text-align: center;
+    margin-bottom: 40px;
 
-    @media (min-width: 768px) {
-      width: calc(50% - 20px);
+    h2 {
+      font-size: 2.5rem;
+      color: #333;
     }
 
-    @media (min-width: 1024px) {
-      width: calc(33.33% - 20px);
+    p {
+      font-size: 1rem;
+      color: #666;
+      margin-top: 10px;
     }
   }
 }
 
-/* project item styling */
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Project item styling */
 .project-item {
-  /* Adjusted: Removed width calculation */
-  margin: 10px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   &:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-3px);
-  }
-
-  @media (min-width: 768px) {
-    margin: 20px; /* Increased margin for larger screens */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
   }
 }
 
-/* card body styling */
+/* Card image styling */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #ddd;
+}
+
+/* Card body styling */
 .card-body {
-  background-color: #a2b0d4;
-  color: #333;
-  padding: 12px;
-  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 15px;
+  text-align: center;
+
+  /* Card title styling */
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #3a3a3a;
+  }
+
+  /* Card text styling */
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
 }
 
-/* card title styling */
-.card-title {
-  font-size: 1.4rem;
-  margin-bottom: 8px;
-}
-
-/* card text styling */
-.card-text {
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-}
-
-/* button styling */
-.btn-primary,
-.btn-secondary {
-  padding: 6px 10px;
-  border-radius: 4px;
-}
-
+/* Buttons styling */
 .project-buttons {
   display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
+  justify-content: center;
+  gap: 10px;
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+
+    &.btn-primary {
+      background-color: #007bff;
+      border: none;
+      color: #fff;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+
+    &.btn-outline-primary {
+      border: 1px solid #007bff;
+      color: #007bff;
+      background-color: transparent;
+
+      &:hover {
+        background-color: #007bff;
+        color: #fff;
+      }
+    }
+  }
 }
 
-.project-buttons .btn {
-  margin-left: 5px;
-  margin-right: 5px;
+/* Media queries for responsive design */
+@media (min-width: 768px) {
+  .projects-container {
+    padding: 30px;
+  }
+
+  .project-item {
+    margin: 0 auto;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
 }
 
-/* Add hover effects for buttons */
-.btn:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
+@media (min-width: 1024px) {
+  .projects-grid {
+    gap: 30px;
+  }
 
-/* Add transition for a smooth hover effect */
-.btn {
-  transition: opacity 0.3s ease-in-out;
+  .card-title {
+    font-size: 2rem;
+  }
+
+  .card-text {
+    font-size: 1.1rem;
+  }
 }
