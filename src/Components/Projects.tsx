@@ -14,14 +14,6 @@ interface Project {
 const Projects: React.FC = () => {
   const projects: Project[] = [
     {
-      title: 'CHIPPER',
-      image: '/assets/images/ChipperAPI.png',
-      description:
-        'An e-commerce business backend that facilitates high-performance API endpoints, ensuring seamless communication between your frontend and database delivering quick responses to users. Built using FastAPI Python framework, PostgreSQL, and Swagger UI for documentation.',
-      sourceLink: 'https://github.com/Simon-Keya/Chipper',
-      demoLink: 'https://github.com/Simon-Keya/Chipper',
-    },
-    {
       title: 'Keyart',
       image: '/assets/images/keya.png',
       description:
@@ -38,20 +30,20 @@ const Projects: React.FC = () => {
       demoLink: 'https://karen-hats.vercel.app',
     },
     {
-      title: 'OkumuGalore',
-      image: '/assets/images/Okumugalor.png',
-      description:
-        'An artist portfolio website showcasing the exquisite paintings of the artist, providing a visually captivating gallery experience.',
-      sourceLink: 'https://github.com/Simon-Keya/Okumu-Galor',
-      demoLink: 'https://okumu-galor.vercel.app',
-    },
-    {
       title: 'Keya Simon',
       image: '/assets/images/Keya Simon.png',
       description:
         'Developed a personal blog website for sharing insights on psychology, self-improvement, philosophy, technology, and art. Built using React and Tailwind CSS.',
       sourceLink: 'https://github.com/Simon-Keya/Keya-Simon',
       demoLink: 'https://keya-simon.vercel.app',
+    },
+    {
+      title: 'Zenials',
+      image: '/assets/images/Zenials.png',
+      description:
+        'A social media app to enable creators monetizze and grow their content',
+      sourceLink: 'https://github.com/Simon-Keya/Zenials',
+      demoLink: '',
     },
     {
       title: 'Ruby',
@@ -70,6 +62,14 @@ const Projects: React.FC = () => {
       demoLink: 'https://portfolio-eight-sigma-34.vercel.app/',
     },
     {
+      title: 'OkumuGalore',
+      image: '/assets/images/Okumugalor.png',
+      description:
+        'An artist portfolio website showcasing the exquisite paintings of the artist, providing a visually captivating gallery experience.',
+      sourceLink: 'https://github.com/Simon-Keya/Okumu-Galor',
+      demoLink: 'https://okumu-galor.vercel.app',
+    },
+    {
       title: 'LUDE - Task Management System',
       image: '/assets/images/LUDE.png',
       description:
@@ -85,6 +85,15 @@ const Projects: React.FC = () => {
       sourceLink: 'https://github.com/Simon-Keya/Chipper-client',
       demoLink: '',
     },
+    {
+      title: 'CHIPPER',
+      image: '/assets/images/ChipperAPI.png',
+      description:
+        'An e-commerce business backend that facilitates high-performance API endpoints, ensuring seamless communication between your frontend and database delivering quick responses to users. Built using FastAPI Python framework, PostgreSQL, and Swagger UI for documentation.',
+      sourceLink: 'https://github.com/Simon-Keya/Chipper',
+      demoLink: '',
+    },
+    
   ];
 
   return (

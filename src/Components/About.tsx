@@ -31,7 +31,7 @@ const AboutMe = () => {
         <section className="mb-5">
           <p className="lead">
             Driven by an insatiable passion for innovation and problem-solving, I thrive on embracing fresh challenges
-            as an enthusiastic learner. Balancing the roles of a dedicated Software Developer and an aspiring
+            as an enthusiastic learner. Balancing the roles of a dedicated Software Engineer and an aspiring
             Artificial Intelligence Engineer, my journey is fueled by curiosity and a commitment to excellence.
           </p>
           <p>
