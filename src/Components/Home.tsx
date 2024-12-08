@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle, faCode, faLaptopCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { Helmet } from 'react-helmet'; // React Helmet for meta tags
+import { Helmet } from 'react-helmet'; // Ensure @types/react-helmet is installed
 import '../styles/Home.scss';
 
-const Home = () => {
+const Home: React.FC = () => {
   const sections = [
     {
       title: 'About',
@@ -24,9 +24,9 @@ const Home = () => {
     },
   ];
 
-  const [currentDescription, setCurrentDescription] = useState('');
+  const [currentDescription, setCurrentDescription] = useState<string>('');
 
-  const handleIconClick = (sectionTitle) => {
+  const handleIconClick = (sectionTitle: string): void => {
     const description = sections.find((section) => section.title === sectionTitle)?.description;
     setCurrentDescription(description || '');
   };
@@ -36,12 +36,18 @@ const Home = () => {
       {/* SEO Meta Tags */}
       <Helmet>
         <title>Simon Keya | Software Engineer, Computer Scientist, Psychologist</title>
-        <meta name="description" content="Explore Simon Keya's portfolio: skills, projects, and professional journey as a Software Engineer, Computer Scientist, and Psychologist." />
+        <meta
+          name="description"
+          content="Explore Simon Keya's portfolio: skills, projects, and professional journey as a Software Engineer, Computer Scientist, and Psychologist."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://simon-keya.vercel.app/" />
         <meta property="og:title" content="Simon Keya's Portfolio" />
-        <meta property="og:description" content="Discover Simon Keya's work and expertise in software engineering, psychology, and entrepreneurship." />
+        <meta
+          property="og:description"
+          content="Discover Simon Keya's work and expertise in software engineering, Computer Science, psychology, and entrepreneurship."
+        />
         <meta property="og:image" content="/assets/images/Home.png" />
         <meta property="og:url" content="https://simon-keya.vercel.app/" />
         <meta property="og:type" content="website" />
@@ -51,7 +57,7 @@ const Home = () => {
         <div className="image-container">
           <img
             src="/assets/images/Home.png"
-            alt="Simon Keya profile image"
+            alt="Simon Keya"
             width="400"
             height="400"
             loading="lazy"

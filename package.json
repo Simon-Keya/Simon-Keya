@@ -67,6 +67,7 @@
   },
   "devDependencies": {
     "@types/mailgun-js": "^0.22.18",
+    "@types/react-helmet": "^6.1.11",
     "@types/react-icons": "^3.0.0"
   }
 }
