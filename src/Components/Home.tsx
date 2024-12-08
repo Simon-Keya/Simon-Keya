@@ -70,6 +70,7 @@ const Home: React.FC = () => {
             <p className="home-subtitle">Computer Scientist</p>
             <p className="home-subtitle">Psychologist</p>
             <p className="home-subtitle">Entrepreneur</p>
+            <p className="home-subtitle">Artist</p>
           </header>
 
           <p className="home-text">
