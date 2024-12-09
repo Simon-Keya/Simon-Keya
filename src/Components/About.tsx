@@ -93,6 +93,10 @@ const AboutMe = () => {
             <li><a href="https://keyart.vercel.app/">Art</a></li>
             <li><a href="https://keya-simon.vercel.app/self-improvement">Self-Improvement</a></li>
             <li><a href="https://keya-simon.vercel.app/blog">Knowledge</a></li>
+            <li>Floriculture</li>
+            <li>Dance</li>
+            <li>Watching Podasts</li>
+            <li>Listening to music</li>
           </ul>
         </section>
 
@@ -103,6 +107,9 @@ const AboutMe = () => {
             <li><em>"Laws of Human Nature"</em> by Robert Greene</li>
             <li><em>"The 80/20 Principle"</em> by Richard Coch</li>
             <li><em>"Atomic Habits"</em> by James Clear</li>
+            <li><em>"The Subtle Art of Not Giving A Fuck"</em> by Mark Manson</li>
+            <li><em>"Thinking, Fast and slow"</em> by Daniel Kanhenman</li>
+            <li><em>"Meditations"</em> by Marcus Aurelius</li>
           </ul>
         </section>
 

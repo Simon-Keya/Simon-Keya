@@ -29,9 +29,10 @@ const Contact: React.FC = () => {
               <a
                 href="mailto:simonkeya78@gmail.com"
                 className="text-gray-500 underline hover:text-gray-700"
-                aria-label="Send an email to simonkeya78@gmail.com"
+                aria-label="Send an email to simonkeya78@gmail.com & keya8020@gmail.com"
               >
                 simonkeya78@gmail.com
+                keya8020@gmail.com
               </a>
             </div>
           </Col>

@@ -15,6 +15,7 @@
 
     .social-links {
       display: flex;
+      flex-direction: row;
       gap: 15px; // Evenly spaced icons
       margin-bottom: 15px; // Adds spacing for smaller screens
 
