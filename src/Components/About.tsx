@@ -94,7 +94,7 @@ const AboutMe = () => {
             <li><a href="https://keya-simon.vercel.app/self-improvement">Self-Improvement</a></li>
             <li><a href="https://keya-simon.vercel.app/blog">Knowledge</a></li>
             <li>Floriculture</li>
-            <li>Dance</li>
+            <li><a href="https://www.youtube.com/watch?v=iNSs9Vmo3WA">Dance</a></li>
             <li>Watching Podasts</li>
             <li>Listening to music</li>
           </ul>
