@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
       description:
         'A social media app to enable creators monetizze and grow their content',
       sourceLink: 'https://github.com/Simon-Keya/Zenials',
-      demoLink : '//https://zenials.vercel.app/',
+      demoLink : 'https://zenials.vercel.app/',
     },
     {
       title: 'Ruby',
