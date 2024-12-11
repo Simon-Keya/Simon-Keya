@@ -22,13 +22,14 @@ const Projects: React.FC = () => {
       demoLink: 'https://keyart.vercel.app',
     },
     {
-      title: 'Karen Hats',
-      image: '/assets/images/Karen hats.png',
+      title: 'Zenials',
+      image: '/assets/images/Zenials.png',
       description:
-        'An e-commerce website for purchasing and ordering hats built using Next.js, Tailwind, Daisy UI, Nest.js, and PostgreSQL.',
-      sourceLink: 'https://github.com/Simon-Keya/Karen-Hats',
-      demoLink: 'https://karen-hats.vercel.app',
+        'A social media app to enable creators monetizze and grow their content',
+      sourceLink: 'https://github.com/Simon-Keya/Zenials',
+      demoLink : 'https://zenials.vercel.app/',
     },
+    
     {
       title: 'Keya Simon',
       image: '/assets/images/Keya Simon.png',
@@ -38,20 +39,20 @@ const Projects: React.FC = () => {
       demoLink: 'https://keya-simon.vercel.app',
     },
     {
-      title: 'Zenials',
-      image: '/assets/images/Zenials.png',
-      description:
-        'A social media app to enable creators monetizze and grow their content',
-      sourceLink: 'https://github.com/Simon-Keya/Zenials',
-      demoLink : 'https://zenials.vercel.app/',
-    },
-    {
       title: 'Ruby',
       image: '/assets/images/RUBY.png',
       description:
         'Implemented an email spam classifier model using Jupyter Notebook.',
       sourceLink: 'https://github.com/Simon-Keya/Ruby',
       demoLink: '',
+    },
+    {
+      title: 'Karen Hats',
+      image: '/assets/images/Karen hats.png',
+      description:
+        'An e-commerce website for purchasing and ordering hats built using Next.js, Tailwind, Daisy UI, Nest.js, and PostgreSQL.',
+      sourceLink: 'https://github.com/Simon-Keya/Karen-Hats',
+      demoLink: 'https://karen-hats.vercel.app',
     },
     {
       title: 'Portfolio',
@@ -66,8 +67,8 @@ const Projects: React.FC = () => {
       image: '/assets/images/Okumugalor.png',
       description:
         'An artist portfolio website showcasing the exquisite paintings of the artist, providing a visually captivating gallery experience.',
-      sourceLink: 'https://github.com/Simon-Keya/Okumu-Galor',
-      demoLink: 'https://okumu-galor.vercel.app',
+      sourceLink: '',
+      demoLink: '',
     },
     {
       title: 'LUDE - Task Management System',

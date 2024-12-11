@@ -126,13 +126,20 @@ const AboutMe = () => {
         <section>
           <h3>Ongoing Studies</h3>
           <ul className="list-unstyled">
-            <li>Diploma in Artificial Intelligence</li>
+            <li>Diploma in Databases and SQL</li>
+            <li>Basics of Architectural studies</li>
             <li>Advanced Diploma in Computer Networking</li>
-            <li>Diploma in Artificial Intelligence ISO Maintenance</li>
+            <li>Diploma in Educational Psychology</li>
+            <li>Diploma in Psychology of Everyday life</li>
+            <li>Diploma in Applied Generative AI</li>
+            <li>Understanding Fashion Psychology</li>
             <li>French Certificate</li>
-            <li>Diploma in Cognitive Therapy</li>
+            <li>Diploma in Fashion Design</li>
+            <li>Diploma in Graphic Design</li>
+            <li>Diploma in Contemporary Architecture and Design</li>
             <li>Diploma in Food Techniques and Skills</li>
-            <li>Diploma in Machine Learning</li>
+            <li>Diploma in ISO/IEC 42001:2023 - Artificial Intelligence Management System (AIMS)
+            </li>
             <li>Advanced Diploma in Python Programming for the Novice to Expert</li>
           </ul>
         </section>
