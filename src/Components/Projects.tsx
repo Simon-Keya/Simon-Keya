@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import '../styles/Projects.scss'; // Import your custom stylesheet
 
 interface Project {
@@ -13,6 +13,14 @@ interface Project {
 
 const Projects: React.FC = () => {
   const projects: Project[] = [
+    {
+      title: 'Barbage Technologies',
+      image: '/assets/images/Barbage Technologies.png',
+      description:
+        'Barbage Technologies is a cutting-edge technology company dedicated to developing innovative software solutions. Led by experienced software engineer and computer scientist Simon Keya',
+      sourceLink: 'https://github.com/BarbageTechnologies/Barbage-Technologies',
+      demoLink: 'https://barbage-technologies.vercel.app',
+    },
     {
       title: 'Keyart',
       image: '/assets/images/keya.png',

@@ -21,7 +21,7 @@ const AboutMe = () => {
           content="Learn about Simon Keya's professional experience, educational background, and personal interests."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/about" />
+        <meta property="og:url" content="https://simon-keya.vercel.app/about" />
       </Helmet>
 
       <div className="container mt-5">
@@ -39,6 +39,52 @@ const AboutMe = () => {
             perfection and my keen eye for emerging technologies.
           </p>
         </section>
+
+        {/* Personality Section */}
+        <section className="mb-5">
+          <h3>Personality Type</h3>
+          <p>
+            I identify as an <strong>Omnivert</strong>, a dynamic personality type that balances introversion and
+            extroversion. This means I can adapt to social environments, thriving both in solitude and in the
+            company of others, depending on the situation.
+          </p>
+          <p>
+            My MBTI personality types include:
+            <ul className="list-unstyled">
+              <li>
+                <a
+                  href="https://www.16personalities.com/entj-personality"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>ENTJ</strong>
+                </a>
+                - Natural leaders with a focus on efficiency, strategy, and long-term vision.
+              </li>
+              <li>
+                <a
+                  href="https://www.16personalities.com/intj-personality"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>INTJ</strong>
+                </a>
+                - Strategic thinkers with a passion for innovation, logical planning, and achieving goals.
+              </li>
+              <li>
+                <a
+                  href="https://www.16personalities.com/entp-personality"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>ENTP</strong>
+                </a>
+                - Creative and energetic individuals with a knack for problem-solving and debating ideas.
+              </li>
+            </ul>
+          </p>
+        </section>
+
 
         <section className="mb-5">
           <h3>Education</h3>
