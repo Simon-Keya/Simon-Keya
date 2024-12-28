@@ -1,6 +1,5 @@
-import React from 'react';
-import { Helmet } from 'react-helmet'; // For managing meta tags
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Helmet } from 'react-helmet'; // For managing meta tags
 import '../styles/About.scss';
 
 const AboutMe = () => {
@@ -88,7 +87,7 @@ const AboutMe = () => {
         <section className="mb-5">
           <h3>Interests & Hobbies</h3>
           <ul className="list-unstyled">
-            <li><a href="https://keya-simon.vercel.app/technology">Technology</a></li>
+            <li><a href="https://barbage-technologies.vercel.app">Technology</a></li>
             <li><a href="https://keya-simon.vercel.app/psychology">Psychology</a></li>
             <li><a href="https://keyart.vercel.app/">Art</a></li>
             <li><a href="https://keya-simon.vercel.app/self-improvement">Self-Improvement</a></li>
@@ -101,17 +100,87 @@ const AboutMe = () => {
         </section>
 
         <section className="mb-5">
-          <h3>Favorite Audiobooks/Reads</h3>
-          <ul className="list-unstyled">
-            <li><em>"The Power of Your Subconscious Mind"</em> by Joseph Murphy</li>
-            <li><em>"Laws of Human Nature"</em> by Robert Greene</li>
-            <li><em>"The 80/20 Principle"</em> by Richard Coch</li>
-            <li><em>"Atomic Habits"</em> by James Clear</li>
-            <li><em>"The Subtle Art of Not Giving A Fuck"</em> by Mark Manson</li>
-            <li><em>"Thinking, Fast and slow"</em> by Daniel Kanhenman</li>
-            <li><em>"Meditations"</em> by Marcus Aurelius</li>
-          </ul>
-        </section>
+  <h3>Favorite Audiobooks/Reads</h3>
+  <ul className="list-unstyled">
+    <li>
+      <a
+        href="https://www.pdfdrive.com/the-power-of-your-subconscious-mind-joseph-murphy-e15820292.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        download
+        aria-label="Download The Power of Your Subconscious Mind by Joseph Murphy"
+      >
+        <em>"The Power of Your Subconscious Mind"</em> by Joseph Murphy
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.pdfdrive.com/the-laws-of-human-nature-robert-greene-e185547271.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        download
+        aria-label="Download The Laws of Human Nature by Robert Greene"
+      >
+        <em>"Laws of Human Nature"</em> by Robert Greene
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.pdfdrive.com/the-8020-principle-by-richard-koch-e15830922.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        download
+        aria-label="Download The 80/20 Principle by Richard Koch"
+      >
+        <em>"The 80/20 Principle"</em> by Richard Koch
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.pdfdrive.com/atomic-habits-by-james-clear-e191214830.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        download
+        aria-label="Download Atomic Habits by James Clear"
+      >
+        <em>"Atomic Habits"</em> by James Clear
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.pdfdrive.com/the-subtle-art-of-not-giving-a-fuck-mark-manson-e181644823.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        download
+        aria-label="Download The Subtle Art of Not Giving A Fuck by Mark Manson"
+      >
+        <em>"The Subtle Art of Not Giving A Fuck"</em> by Mark Manson
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.pdfdrive.com/thinking-fast-and-slow-daniel-kahneman-e15820144.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        download
+        aria-label="Download Thinking, Fast and Slow by Daniel Kahneman"
+      >
+        <em>"Thinking, Fast and Slow"</em> by Daniel Kahneman
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.pdfdrive.com/meditations-by-marcus-aurelius-e17015526.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        download
+        aria-label="Download Meditations by Marcus Aurelius"
+      >
+        <em>"Meditations"</em> by Marcus Aurelius
+      </a>
+    </li>
+  </ul>
+</section>
 
         <section className="mb-5">
           <h3>Philosophical Quotes</h3>
