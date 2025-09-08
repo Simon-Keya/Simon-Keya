@@ -67,6 +67,7 @@ const Home: React.FC = () => {
           <header className="home-header">
             <h1 className="home-title">Simon Keya</h1>
             <p className="home-subtitle">Software Developer</p>
+            <p className="home-subtitle">Artist</p>
             
             </header>
 
