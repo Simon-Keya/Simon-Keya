@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { faCode, faEnvelope, faLaptopCode, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserCircle, faCode, faLaptopCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet'; // Ensure @types/react-helmet is installed
 import '../styles/Home.scss';
 
@@ -66,12 +66,9 @@ const Home: React.FC = () => {
         <main className="home-content">
           <header className="home-header">
             <h1 className="home-title">Simon Keya</h1>
-            <p className="home-subtitle">Software Engineer</p>
-            <p className="home-subtitle">Computer Scientist</p>
-            <p className="home-subtitle">Psychologist</p>
-            <p className="home-subtitle">Entrepreneur</p>
-            <p className="home-subtitle">Artist</p>
-          </header>
+            <p className="home-subtitle">Software Developer</p>
+            
+            </header>
 
           <p className="home-text">
             Welcome to my website! Here, you'll find an interactive showcase of my skills, projects, and experiences.

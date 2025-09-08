@@ -138,7 +138,6 @@ const AboutMe = () => {
             <li><a href="https://keyart.vercel.app/">Art</a></li>
             <li><a href="https://keya-simon.vercel.app/self-improvement">Self-Improvement</a></li>
             <li><a href="https://keya-simon.vercel.app/blog">Knowledge</a></li>
-            <li>Floriculture</li>
             <li><a href="https://www.youtube.com/watch?v=iNSs9Vmo3WA">Dance</a></li>
             <li>Watching Podasts</li>
             <li>Listening to music</li>
@@ -242,20 +241,8 @@ const AboutMe = () => {
           <h3>Ongoing Studies</h3>
           <ul className="list-unstyled">
             <li>Diploma in Databases and SQL</li>
-            <li>Basics of Architectural studies</li>
             <li>Advanced Diploma in Computer Networking</li>
             <li>Diploma in Educational Psychology</li>
-            <li>Diploma in Psychology of Everyday life</li>
-            <li>Diploma in Applied Generative AI</li>
-            <li>Understanding Fashion Psychology</li>
-            <li>French Certificate</li>
-            <li>Diploma in Fashion Design</li>
-            <li>Diploma in Graphic Design</li>
-            <li>Diploma in Contemporary Architecture and Design</li>
-            <li>Diploma in Food Techniques and Skills</li>
-            <li>Diploma in ISO/IEC 42001:2023 - Artificial Intelligence Management System (AIMS)
-            </li>
-            <li>Advanced Diploma in Python Programming for the Novice to Expert</li>
           </ul>
         </section>
       </div>
