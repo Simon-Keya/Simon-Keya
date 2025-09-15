@@ -1,7 +1,9 @@
+
 "use client";
 
 import { ReactNode, useEffect, useState } from 'react';
 import Navbar from './Navbar';
+
 export default function ThemeProvider({ children }: { children: ReactNode }) {
   const [isDark, setIsDark] = useState(false);
 
@@ -27,7 +29,7 @@ export default function ThemeProvider({ children }: { children: ReactNode }) {
 
   return (
     <>
-      <Navbar toggleTheme={toggleTheme} isDark={isDark} />
+      <Navbar />
       {children}
     </>
   );
