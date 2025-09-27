@@ -19,14 +19,14 @@ const staggerContainer = {
 }
 
 const scaleOnHover = {
-  hover: { 
+  hover: {
     scale: 1.05,
     transition: { duration: 0.2, ease: "easeInOut" }
   },
   tap: { scale: 0.95 }
 }
 
-// Social links data for better maintainability
+
 const socialLinks = [
   {
     href: "https://www.linkedin.com/in/simon-keya-9ab441237/",
@@ -48,7 +48,7 @@ const socialLinks = [
   }
 ]
 
-// Typewriter words for better organization
+// Typewriter wordss
 const typewriterWords = [
   'Full Stack Developer.',
   'TypeScript & Python Enthusiast.',
@@ -63,7 +63,7 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col justify-center items-center px-4 text-center bg-black text-white pt-20 overflow-hidden"
     >
       {/* Subtle background pattern */}
-      <div 
+      <div
         className="absolute inset-0 opacity-5"
         style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.3) 1px, transparent 0)`,
@@ -132,7 +132,8 @@ export default function Hero() {
         {/* Enhanced Action Buttons */}
         <motion.div
           variants={fadeInUp}
-          className="flex flex-col sm:flex-row gap-4 md:gap-6 mb-12 justify-center items-center"
+          // Changed from flex-col to flex-wrap for a responsive row layout
+          className="flex flex-wrap justify-center items-center gap-3 md:gap-6 mb-12"
         >
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
@@ -151,7 +152,7 @@ export default function Hero() {
               className="px-8 py-4 border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white rounded-lg font-semibold shadow-lg transition-all duration-300 backdrop-blur-sm min-w-[160px]"
               aria-label="Contact Me"
             >
-              Contact Me
+            Contact Me
             </Link>
           </motion.div>
 
