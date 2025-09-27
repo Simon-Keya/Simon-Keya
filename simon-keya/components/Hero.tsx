@@ -280,7 +280,7 @@ export default function Hero() {
 
               href="/projects"
 
-              className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-lg font-semibold shadow-lg transition-all duration-300 transform relative overflow-hidden min-w-[160px] w-full sm:w-auto text-center block"
+              className="group px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-lg font-semibold shadow-lg transition-all duration-300 transform relative overflow-hidden min-w-[140px] w-full sm:w-auto text-center block"
 
               aria-label="View Projects"
 
@@ -302,7 +302,7 @@ export default function Hero() {
 
               href="/contact"
 
-              className="px-8 py-4 border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white rounded-lg font-semibold shadow-lg transition-all duration-300 backdrop-blur-sm min-w-[160px] w-full sm:w-auto text-center block"
+              className="px-6 py-4 border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white rounded-lg font-semibold shadow-lg transition-all duration-300 backdrop-blur-sm min-w-[140px] w-full sm:w-auto text-center block"
 
               aria-label="Contact Me"
 
@@ -324,7 +324,7 @@ export default function Hero() {
 
               download
 
-              className="group px-8 py-4 bg-white text-black hover:bg-gray-100 rounded-lg font-semibold shadow-lg flex items-center justify-center gap-2 transition-all duration-300 min-w-[160px] w-full sm:w-auto"
+              className="group px-6 py-4 bg-white text-black hover:bg-gray-100 rounded-lg font-semibold shadow-lg flex items-center justify-center gap-2 transition-all duration-300 min-w-[140px] w-full sm:w-auto"
 
               aria-label="Download Resume"
 
