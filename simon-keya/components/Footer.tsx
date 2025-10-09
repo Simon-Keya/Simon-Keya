@@ -13,7 +13,7 @@ const socialLinks = [
     color: "hover:text-gray-400"
   },
   {
-    href: "https://linkedin.com/in/simonkeya",
+    href: "https://www.linkedin.com/in/simon-keya-9ab441237/",
     icon: FaLinkedinIn,
     label: "LinkedIn Profile",
     color: "hover:text-blue-400"

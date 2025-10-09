@@ -501,7 +501,7 @@ const About = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <motion.a
-                href="#contact"
+                href="/contact"
                 className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-200 font-medium"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -509,7 +509,7 @@ const About = () => {
                 Get In Touch
               </motion.a>
               <motion.a
-                href="#projects"
+                href="/projects"
                 className="px-8 py-3 bg-slate-700/50 hover:bg-slate-600/50 text-white rounded-lg transition-all duration-200 font-medium border border-slate-600"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
