@@ -21,23 +21,23 @@ My work focuses on **backend logic, APIs, databases**, and cost-effective infras
 ## 🛠️ Tech Stack
 
 ### Frontend
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 ### Backend
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 ### DevOps & Tools
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase)
-![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white)
 
 ---
 
@@ -57,9 +57,7 @@ My work focuses on **backend logic, APIs, databases**, and cost-effective infras
 ## 📊 GitHub Stats
 
 ### 🔥 Contribution Streak
-![GitHub Streak](https://streak-stats.demolab.com?user=simonkeya&theme=github-dark&hide_border=true)
-
-> **Longest streak:** 35 days
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=simonkeya&theme=github-dark&hide_border=true)
 
 ### 📈 GitHub Activity
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=simonkeya&show_icons=true&theme=github_dark&hide_border=true)
@@ -80,8 +78,8 @@ My work focuses on **backend logic, APIs, databases**, and cost-effective infras
 
 ## 📫 Connect With Me
 
-- GitHub: https://github.com/simonkeya  
-- LinkedIn: https://linkedin.com/in/simonkeya  
+- GitHub: [github.com/simonkeya](https://github.com/simonkeya)  
+- LinkedIn: [linkedin.com/in/simonkeya](https://linkedin.com/in/simonkeya)  
 - Portfolio: *(add when ready)*  
 - Email: *(add when ready)*  
 
