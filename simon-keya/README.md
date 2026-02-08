@@ -1,20 +1,20 @@
 # 👋 Hi, I'm Simon Keya
 
 **Software Engineer | Backend & Full-Stack Development**  
-I build practical, scalable web applications with a strong focus on backend systems and real-world deployment.
+I build practical, scalable web applications with a strong focus on backend systems, clean APIs, and real-world deployment.
 
 ---
 
 ## 🚀 About Me
 
-I’m a **software engineer** experienced in building and deploying **production-ready web systems**.  
-My work focuses on **backend logic, APIs, databases**, and cost-effective infrastructure choices.
+I’m a **software engineer** experienced in designing, building, and deploying **production-ready web systems**.  
+My work emphasizes **backend architecture, APIs, databases**, and cost-efficient infrastructure choices.
 
-- 💻 Backend-focused with **Node.js, Django, and PostgreSQL**
-- 🌐 Full-stack experience using **React / Next.js**
-- 🗄️ Strong understanding of **relational databases & schema design**
+- 💻 Backend-focused with **Node.js, Django, FastAPI, and PostgreSQL**
+- 🌐 Full-stack experience using **React, Next.js, and React Native**
+- 🗄️ Strong understanding of **relational & NoSQL database design**
 - ⚡ Experienced with **VPS hosting, cloud platforms, and performance trade-offs**
-- 🎯 Interested in building **affordable, scalable solutions** for real businesses
+- 🎯 Focused on building **affordable, scalable solutions** for real businesses
 
 ---
 
@@ -22,19 +22,26 @@ My work focuses on **backend logic, APIs, databases**, and cost-effective infras
 
 ### Frontend
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 ### Backend
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
-### DevOps & Tools
+### Cloud, DevOps & Tools
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white)
@@ -44,9 +51,9 @@ My work focuses on **backend logic, APIs, databases**, and cost-effective infras
 ## 📂 Featured Work
 
 - **Blog Backend (Django + PostgreSQL)**  
-  Scalable backend with authentication, CRUD operations, and clean database modeling.
+  Scalable backend with authentication, authorization, and CRUD functionality.
 
-- **E-commerce Backend (Node.js + TypeScript)**  
+- **E-commerce Backend (Node.js / TypeScript)**  
   Lightweight, performance-focused backend optimized for affordability and speed.
 
 - **Portfolio Website**  
@@ -57,7 +64,9 @@ My work focuses on **backend logic, APIs, databases**, and cost-effective infras
 ## 📊 GitHub Stats
 
 ### 🔥 Contribution Streak
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=simonkeya&theme=github-dark&hide_border=true)
+![GitHub Streak](https://streak-stats.demolab.com?user=simonkeya&theme=github-dark&hide_border=true)
+
+> **Longest streak:** 35 days
 
 ### 📈 GitHub Activity
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=simonkeya&show_icons=true&theme=github_dark&hide_border=true)
@@ -69,19 +78,20 @@ My work focuses on **backend logic, APIs, databases**, and cost-effective infras
 
 ## 🎯 Current Focus
 
-- Improving **backend architecture & code quality**
-- Building **reliable APIs and database-driven systems**
-- Exploring **cost-efficient hosting and VPS performance**
-- Strengthening **system design and scalability skills**
+- Improving **backend architecture & system design**
+- Building **secure, reliable APIs**
+- Optimizing **database performance**
+- Exploring **cloud-native and hybrid deployments**
+- Strengthening **scalability and maintainability practices**
 
 ---
 
 ## 📫 Connect With Me
 
-- GitHub: [github.com/simonkeya](https://github.com/simonkeya)  
-- LinkedIn: [linkedin.com/in/simonkeya](https://linkedin.com/in/simonkeya)  
-- Portfolio: *(add when ready)*  
-- Email: *(add when ready)*  
+- GitHub: https://github.com/simonkeya  
+- LinkedIn: https://linkedin.com/in/simonkeya  
+- Portfolio: *(https://simon-keya.vercel.app)*  
+- Email: *(simonkeya78@gmail.com)*  
 
 ---
 
