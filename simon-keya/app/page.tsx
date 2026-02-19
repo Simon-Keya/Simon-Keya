@@ -61,9 +61,7 @@ export default function HomePage() {
         block: 'start'
       })
     }
-  }
 
-  // Navigate to next section
   const scrollToNext = () => {
     if (currentSection < sections.length - 1) {
       scrollToSection(currentSection + 1)
