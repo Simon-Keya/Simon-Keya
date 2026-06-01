@@ -19,7 +19,7 @@ const projects: Project[] = [
     title: 'International Institute',
     image: '/International.png',
     description: 'A Portfolio Website for an International Institute for Foreign Languages and Hospitality Management to showcase what their campus offers.',
-    stack: ['Next.js', 'Tailwindcss', 'DaisyUI','Framer Motion'],
+    stack: ['Next.js', 'Typescript','Tailwindcss', 'DaisyUI','Framer Motion'],
     github: 'https://github.com/Simon-Keya/Zenials',
     live: 'https://foreignlanguagesandhospitality.netlify.app/',
     category: 'Portfolio'
@@ -29,7 +29,7 @@ const projects: Project[] = [
     title: 'Kelvisan Electrical Networks Ltd',
     image: '/Kelvisan.png',
     description: 'Kelvinsan Electrical Networks Ltd is a premier provider of electrical, networking, and software development services in Kenya.',
-    stack: ['Next.js', 'React', 'Tailwind CSS', 'Django', 'PostgreSQL'],
+    stack: ['Next.js', 'Typescript','Tailwind CSS'],
     github: 'https://github.com/Simon-Keya/Kelvisan-Electrical-Networks',
     live: 'https://kelvisan-electrical-networks-ltd.vercel.app',
     category: 'Business'
@@ -49,7 +49,7 @@ const projects: Project[] = [
     title: 'Keyart',
     image: '/keya.png',
     description: 'A digital gallery showcasing imaginative art and creative visions, built with modern web tech.',
-    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     github: 'https://github.com/Simon-Keya/Keyart',
     live: 'https://keyart.vercel.app',
     category: 'Portfolio'
