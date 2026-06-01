@@ -61,6 +61,7 @@ export default function HomePage() {
         block: 'start'
       })
     }
+  } // <--- This closing brace was missing in your original code
 
   const scrollToNext = () => {
     if (currentSection < sections.length - 1) {
@@ -147,7 +148,7 @@ export default function HomePage() {
         )}
       </AnimatePresence>
 
-      {/* Scroll to Next Section Button (shows when not at bottom) */}
+      {/* Scroll to Next Section Button */}
       <AnimatePresence>
         {!isAtBottom && currentSection < sections.length - 1 && (
           <motion.button
@@ -167,22 +168,6 @@ export default function HomePage() {
           </motion.button>
         )}
       </AnimatePresence>
-
-      {/* Keyboard Navigation Hint */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 3, duration: 0.8 }}
-        className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-30 text-gray-500 text-sm font-medium hidden md:block pointer-events-none"
-      >
-        <motion.div
-          animate={{ y: [0, -5, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="flex items-center space-x-2"
-        >
-          <span>Use scroll or navigation dots →</span>
-        </motion.div>
-      </motion.div>
 
       {/* Section Progress Bar (Mobile) */}
       <div className="fixed bottom-0 left-0 right-0 h-1 bg-gray-200 z-40 lg:hidden">

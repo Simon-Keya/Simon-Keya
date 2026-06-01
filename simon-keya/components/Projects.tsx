@@ -14,8 +14,18 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
+   {
     id: 1,
+    title: 'International Institute',
+    image: '/International.png',
+    description: 'A Portfolio Website for an International Institute for Foreign Languages and Hospitality Management to showcase what their campus offers.',
+    stack: ['Next.js', 'Tailwindcss', 'DaisyUI','Framer Motion'],
+    github: 'https://github.com/Simon-Keya/Zenials',
+    live: 'https://foreignlanguagesandhospitality.netlify.app/',
+    category: 'Portfolio'
+  },
+  {
+    id: 2,
     title: 'Kelvisan Electrical Networks Ltd',
     image: '/Kelvisan.png',
     description: 'Kelvinsan Electrical Networks Ltd is a premier provider of electrical, networking, and software development services in Kenya.',
@@ -25,17 +35,17 @@ const projects: Project[] = [
     category: 'Business'
   },
   {
-    id: 2,
-    title: 'Karen Hats',
-    image: '/Karen hats.png',
-    description: 'An e-commerce website for purchasing and ordering hats built using Next.js, Tailwind, Daisy UI, Nest.js, and PostgreSQL.',
-    stack: ['Next.js', 'Tailwind CSS', 'Nest.js', 'PostgreSQL', 'TypeScript'],
-    github: 'https://github.com/Simon-Keya/Karen-Hats',
-    live: 'https://karen-hats.vercel.app',
+    id: 3,
+    title: 'Chipper',
+    image: '/Chipper.png',
+    description: 'An e-commerce website for purchasing and ordering products built using Next.js, Tailwind, Daisy UI, Nest.js, and PostgreSQL.',
+    stack: ['Next.js', 'Tailwind CSS', 'Express.js', 'PostgreSQL', 'TypeScript'],
+    github: 'https://github.com/Simon-Keya/Chipper',
+    live: 'https://chipper-gray.vercel.app',
     category: 'E-commerce'
   },
   {
-    id: 3,
+    id: 4,
     title: 'Keyart',
     image: '/keya.png',
     description: 'A digital gallery showcasing imaginative art and creative visions, built with modern web tech.',
@@ -45,7 +55,7 @@ const projects: Project[] = [
     category: 'Portfolio'
   },
   {
-    id: 4,
+    id: 5,
     title: 'Zenials',
     image: '/Zenials.png',
     description: 'A social media platform to help creators monetize and grow their content.',
