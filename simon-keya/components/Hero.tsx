@@ -1,10 +1,11 @@
 'use client'
+
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { FaFileDownload, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { Typewriter } from 'react-simple-typewriter'
 
-// Animation variants for better organization
+// Animation variants
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 }
@@ -17,15 +18,6 @@ const staggerContainer = {
     }
   }
 }
-
-const scaleOnHover = {
-  hover: {
-    scale: 1.05,
-    transition: { duration: 0.2, ease: "easeInOut" }
-  },
-  tap: { scale: 0.95 }
-}
-
 
 const socialLinks = [
   {
@@ -48,7 +40,6 @@ const socialLinks = [
   }
 ]
 
-// Typewriter wordss
 const typewriterWords = [
   'Full Stack Developer.',
   'TypeScript & Python Enthusiast.',
@@ -72,14 +63,12 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      {/* Main content container with stagger animation */}
       <motion.div
         variants={staggerContainer}
         initial="initial"
         animate="animate"
         className="relative z-10 max-w-4xl mx-auto"
       >
-        {/* Animated Heading */}
         <motion.h1
           variants={{
             ...fadeInUp,
@@ -96,11 +85,7 @@ export default function Hero() {
           </span>
         </motion.h1>
 
-        {/* Typewriter Animated Roles */}
-        <motion.div
-          variants={fadeInUp}
-          className="mb-8"
-        >
+        <motion.div variants={fadeInUp} className="mb-8">
           <p className="text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto text-gray-100 font-mono min-h-[2.5rem] flex items-center justify-center">
             I am a{' '}
             <span className="text-blue-400 font-bold ml-2 inline-block min-w-0">
@@ -117,7 +102,6 @@ export default function Hero() {
           </p>
         </motion.div>
 
-        {/* Enhanced Intro Text */}
         <motion.p
           variants={fadeInUp}
           className="text-base md:text-lg lg:text-xl max-w-3xl mx-auto mb-10 text-gray-300 leading-relaxed"
@@ -129,39 +113,34 @@ export default function Hero() {
           and solving real-world problems through innovative technology solutions.
         </motion.p>
 
-        {/* Enhanced Action Buttons */}
+        {/* Responsive Button Container */}
         <motion.div
           variants={fadeInUp}
-          // Changed from flex-col to flex-wrap for a responsive row layout
-          className="flex flex-wrap justify-center items-center gap-3 md:gap-6 mb-12"
+          className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12 w-full max-w-md mx-auto sm:max-w-none px-4"
         >
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
             <Link
               href="/projects"
-              className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-lg font-semibold shadow-lg transition-all duration-300 transform relative overflow-hidden min-w-[160px]"
-              aria-label="View Projects"
+              className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-lg font-semibold shadow-lg transition-all duration-300 block text-center w-full sm:w-auto"
             >
               <span className="relative z-10">View Projects</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </Link>
           </motion.div>
 
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
             <Link
               href="/contact"
-              className="px-8 py-4 border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white rounded-lg font-semibold shadow-lg transition-all duration-300 backdrop-blur-sm min-w-[160px]"
-              aria-label="Contact Me"
+              className="px-8 py-4 border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white rounded-lg font-semibold shadow-lg transition-all duration-300 backdrop-blur-sm block text-center w-full sm:w-auto"
             >
-              Contact
+              Contact Me
             </Link>
           </motion.div>
 
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
             <a
               href="/files/Simon Keya's resume.pdf"
               download
-              className="group px-8 py-4 bg-white text-black hover:bg-gray-100 rounded-lg font-semibold shadow-lg flex items-center justify-center gap-2 transition-all duration-300 min-w-[160px]"
-              aria-label="Download Resume"
+              className="group px-8 py-4 bg-white text-black hover:bg-gray-100 rounded-lg font-semibold shadow-lg flex items-center justify-center gap-2 transition-all duration-300 w-full sm:w-auto"
             >
               <FaFileDownload className="group-hover:animate-bounce" />
               <span>Resume</span>
@@ -169,11 +148,7 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Enhanced Social Links */}
-        <motion.div
-          variants={fadeInUp}
-          className="flex gap-8 justify-center"
-        >
+        <motion.div variants={fadeInUp} className="flex gap-8 justify-center">
           {socialLinks.map(({ href, icon: Icon, label, hoverColor }) => (
             <motion.a
               key={label}
