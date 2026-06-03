@@ -37,7 +37,7 @@ const projects: Project[] = [
   {
     id: 3,
     title: 'Chipper',
-    image: '/Chipper.png',
+    image: '/Chipper.jpg',
     description: 'An e-commerce website for purchasing and ordering products built using Next.js, Tailwind, Daisy UI, Nest.js, and PostgreSQL.',
     stack: ['Next.js', 'Tailwind CSS', 'Express.js', 'PostgreSQL', 'TypeScript'],
     github: 'https://github.com/Simon-Keya/Chipper',
