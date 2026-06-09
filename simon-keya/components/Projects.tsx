@@ -51,7 +51,7 @@ const projects: Project[] = [
     description: 'A digital gallery showcasing imaginative art and creative visions, built with modern web tech.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     github: 'https://github.com/Simon-Keya/Keyart',
-    live: 'https://keyart.vercel.app',
+    live: 'https://keyart.netlify.app',
     category: 'Portfolio'
   },
   {
