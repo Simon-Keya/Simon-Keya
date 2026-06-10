@@ -19,7 +19,7 @@ const socialLinks = [
     color: "hover:text-blue-400"
   },
   {
-    href: "https://keyart.vercel.app",
+    href: "https://keyart.netlify.app",
     icon: FaPalette,
     label: "Art Portfolio",
     color: "hover:text-purple-400"

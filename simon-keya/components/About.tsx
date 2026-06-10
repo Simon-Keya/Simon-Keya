@@ -293,7 +293,7 @@ const About = () => {
                     </p>
 
                     <motion.a
-                      href="https://keyart.vercel.app" // Edit this URL to your art portfolio website
+                      href="https://keyart.netlify.app" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-200 font-medium"
