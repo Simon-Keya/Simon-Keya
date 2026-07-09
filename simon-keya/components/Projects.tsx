@@ -46,6 +46,16 @@ const projects: Project[] = [
   },
   {
     id: 4,
+    title: 'Samuel Kanuna',
+    image: '/samuel-kanuna.png',
+    description: 'A content-and-SEO strategist\'s portfolio site built to demonstrate the craft it sells — technical SEO, keyword-mapped content, and copy engineered to rank and convert for dental, DTC, and B2B SaaS clients.',
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    github: 'https://github.com/Simon-Keya/Samuel-Kanuna',
+    live: 'https://samuel-kanuna.vercel.app',
+    category: 'Portfolio'
+},
+  {
+    id: 5,
     title: 'Keyart',
     image: '/keya.png',
     description: 'A digital gallery showcasing imaginative art and creative visions, built with modern web tech.',
@@ -55,7 +65,7 @@ const projects: Project[] = [
     category: 'Portfolio'
   },
   {
-    id: 5,
+    id: 6,
     title: 'Zenials',
     image: '/Zenials.png',
     description: 'A social media platform to help creators monetize and grow their content.',
