@@ -35,7 +35,26 @@ const projects: Project[] = [
     category: 'Business'
   },
   {
-    id: 3,
+  id: 3,
+  title: "SMANS",
+  image: "/smans.png",
+  description: "A comprehensive cloud-based School Management System designed to streamline academic, administrative, and financial operations for educational institutions. It centralizes student information, attendance, examinations, fee management, communication, and reporting through secure role-based dashboards for administrators, teachers, students, and parents.",
+  stack: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Prisma",
+    "PostgreSQL",
+    "NextAuth",
+    "Redis",
+    "Node.js"
+  ],
+  github: "https://github.com/Simon-Keya/SMANS",
+  live: "https://smans.vercel.app",
+  category: "System"
+},
+  {
+    id:4,
     title: 'Chipper',
     image: '/Chipper.png',
     description: 'An e-commerce website for purchasing and ordering products built using Next.js, Tailwind, Daisy UI, Nest.js, and PostgreSQL.',
@@ -45,7 +64,7 @@ const projects: Project[] = [
     category: 'E-commerce'
   },
   {
-    id: 4,
+    id:5,
     title: 'Samuel Kanuna',
     image: '/samuel-kanuna.png',
     description: 'A content-and-SEO strategist\'s portfolio site built to demonstrate the craft it sells — technical SEO, keyword-mapped content, and copy engineered to rank and convert for dental, DTC, and B2B SaaS clients.',
@@ -55,7 +74,7 @@ const projects: Project[] = [
     category: 'Portfolio'
 },
   {
-    id: 5,
+    id: 6,
     title: 'Keyart',
     image: '/keya.png',
     description: 'A digital gallery showcasing imaginative art and creative visions, built with modern web tech.',
@@ -65,7 +84,7 @@ const projects: Project[] = [
     category: 'Portfolio'
   },
   {
-    id: 6,
+    id: 7,
     title: 'Zenials',
     image: '/Zenials.png',
     description: 'A social media platform to help creators monetize and grow their content.',
@@ -76,7 +95,7 @@ const projects: Project[] = [
   },
 ];
 
-const categories = ['All', 'Business', 'E-commerce', 'Portfolio', 'Social'];
+const categories = ['All', 'Business', 'E-commerce', 'Portfolio', 'Social', 'System']
 
 interface ProjectCardProps {
   project: Project;
