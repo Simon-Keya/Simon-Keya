@@ -20,8 +20,8 @@ const projects: Project[] = [
     image: '/International.png',
     description: 'A Portfolio Website for an International Institute for Foreign Languages and Hospitality Management to showcase what their campus offers.',
     stack: ['Next.js', 'Typescript','Tailwindcss', 'DaisyUI','Framer Motion'],
-    github: 'https://github.com/Simon-Keya/Zenials',
-    live: 'https://foreignlanguagesandhospitality.netlify.app/',
+    github: 'https://github.com/Simon-Keya/foreignlanguagesandhospitality',
+    live: 'https://foreignlanguagesandhospitality.com/',
     category: 'Portfolio'
   },
   {
@@ -38,7 +38,7 @@ const projects: Project[] = [
   id: 3,
   title: "SMANS",
   image: "/smans.png",
-  description: "A comprehensive cloud-based School Management System designed to streamline academic, administrative, and financial operations for educational institutions. It centralizes student information, attendance, examinations, fee management, communication, and reporting through secure role-based dashboards for administrators, teachers, students, and parents.",
+  description: "A comprehensive Web-based School Management System designed to streamline academic, administrative, and financial operations for educational institutions. It centralizes student information, attendance, examinations, fee management, communication, and reporting through secure role-based dashboards for administrators, teachers, students, and parents.",
   stack: [
     "Next.js",
     "TypeScript",
