@@ -1,10 +1,10 @@
-
+﻿
 'use client'
 import { AnimatePresence, motion, Variants } from 'framer-motion'
 import React, { useState } from 'react'
 import {
   SiCloudinary,
-  SiCss3,
+  SiCss,
   SiDjango,
   SiDocker,
   SiExpress,
@@ -48,7 +48,7 @@ const skills: Skill[] = [
   { name: 'JavaScript', icon: <SiJavascript className="text-[#f7df1e]" />, category: 'Frontend', proficiency: 4, yearsOfExperience: 4, description: 'Core programming language for web development' },
   { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-[#06b6d4]" />, category: 'Frontend', proficiency: 3, yearsOfExperience: 2, description: 'Utility-first CSS framework for rapid UI development' },
   { name: 'HTML5', icon: <SiHtml5 className="text-[#e34f26]" />, category: 'Frontend', proficiency: 4, yearsOfExperience: 5, description: 'Standard markup language for web documents' },
-  { name: 'CSS3', icon: <SiCss3 className="text-[#1572b6]" />, category: 'Frontend', proficiency: 4, yearsOfExperience: 4, description: 'Styling language for web presentation' },
+  { name: 'CSS3', icon: <SiCss className="text-[#1572b6]" />, category: 'Frontend', proficiency: 4, yearsOfExperience: 4, description: 'Styling language for web presentation' },
   // Backend
   { name: 'Node.js', icon: <SiNodedotjs className="text-[#339933]" />, category: 'Backend', proficiency: 4, yearsOfExperience: 3, description: 'JavaScript runtime for server-side development' },
   { name: 'Python', icon: <SiPython className="text-[#3776ab]" />, category: 'Backend', proficiency: 4, yearsOfExperience: 3, description: 'Versatile programming language for backend development' },
@@ -214,7 +214,7 @@ export default function Skills() {
             className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl mb-6 shadow-lg"
             variants={itemVariants}
           >
-            <div className="text-2xl text-white">⚡</div>
+            <div className="text-2xl text-white">âš¡</div>
           </motion.div>
           <motion.h2
             className="text-4xl md:text-6xl font-bold text-white mb-4"
@@ -338,3 +338,4 @@ export default function Skills() {
     </motion.section>
   )
 }
+
