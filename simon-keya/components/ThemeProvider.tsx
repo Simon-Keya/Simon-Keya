@@ -1,36 +1,13 @@
-
-"use client";
-
-import { ReactNode, useEffect, useState } from 'react';
-import Navbar from './Navbar';
+'use client'
+import { ReactNode, useEffect, useState } from 'react'
 
 export default function ThemeProvider({ children }: { children: ReactNode }) {
-  const [isDark, setIsDark] = useState(false);
-
+  const [ready, setReady] = useState(false)
   useEffect(() => {
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme === 'dark') {
-      setIsDark(true);
-      document.documentElement.classList.add('dark');
-    }
-  }, []);
-
-  function toggleTheme() {
-    if (isDark) {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-      setIsDark(false);
-    } else {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-      setIsDark(true);
-    }
-  }
-
-  return (
-    <>
-      <Navbar />
-      {children}
-    </>
-  );
+    const saved = localStorage.getItem('theme')
+    const dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches
+    document.documentElement.classList.toggle('dark', dark)
+    setReady(true)
+  }, [])
+  return <div data-theme-ready={ready ? 'true' : 'false'}>{children}</div>
 }

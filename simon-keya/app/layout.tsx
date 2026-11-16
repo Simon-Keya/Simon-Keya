@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import './globals.css'
+import ThemeProvider from '@/components/ThemeProvider'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://simon-keya.vercel.app'),
@@ -13,5 +14,5 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  return <html lang="en"><body>{children}</body></html>
+  return <html lang="en" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{__html: `try { const saved = localStorage.getItem('theme'); const dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches; if (dark) document.documentElement.classList.add('dark'); } catch (_) {}`}} /></head><body><ThemeProvider>{children}</ThemeProvider></body></html>
 }
