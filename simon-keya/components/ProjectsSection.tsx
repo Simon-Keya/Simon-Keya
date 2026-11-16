@@ -59,11 +59,11 @@ const projects: Project[] = [
     slug: 'restflow-go', visual: 'go', status: 'Migration in progress'
   },
   {
-    number: '04', name: 'SMANS', category: 'School management platform', type: 'FULL-STACK PRODUCT',
+    number: '04', name: 'SMANS', category: 'School management platform', type: 'FULL-STACK PRODUCT · IN PROGRESS',
     description: 'A school management application bringing academic, administrative and financial workflows into role-aware interfaces for school administrators, teachers, students and parents.',
     contribution: 'Full-stack development · API workflows · Access control · Integrations',
     stack: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'M-Pesa'],
-    slug: 'smans', visual: 'smans', status: 'Product engineering', image: '/smans.png', liveUrl: 'https://smans.vercel.app'
+    slug: 'smans', visual: 'smans', status: 'In progress', image: '/smans.png', liveUrl: 'https://smans.vercel.app'
   },
   {
     number: '05', name: 'International Institute of Foreign Languages', category: 'Education & language institute website', type: 'CLIENT PROJECT · WEB',
@@ -93,11 +93,7 @@ const projects: Project[] = [
     stack: ['Next.js', 'TypeScript', 'Responsive UI', 'Digital menu'],
     slug: 'inarikicchin', visual: 'inari', status: 'Client website', liveUrl: 'https://inaikicchinweb.vercel.app'
   },
-  {
-    number: '09', name: 'Kelvisan', category: 'Electrical & network services website', type: 'EARLIER WORK · WEB',
-    description: 'A company website presenting electrical, networking and related technology services for prospective clients.',
-    contribution: 'Website implementation · Content presentation', stack: ['HTML', 'CSS', 'JavaScript'], slug: 'kelvisan', visual: 'accommodation', status: 'Earlier portfolio work', image: '/Kelvisan.png', liveUrl: 'https://kelvisan-electrical-networks-ltd.vercel.app'
-  },
+
 ]
 
 export default function ProjectsSection(){

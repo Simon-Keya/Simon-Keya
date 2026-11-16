@@ -24,16 +24,7 @@ const projects: Project[] = [
     live: 'https://foreignlanguagesandhospitality.com/',
     category: 'Portfolio'
   },
-  {
-    id: 2,
-    title: 'Kelvisan Electrical Networks Ltd',
-    image: '/Kelvisan.png',
-    description: 'Kelvinsan Electrical Networks Ltd is a premier provider of electrical, networking, and software development services in Kenya.',
-    stack: ['Next.js', 'Typescript','Tailwind CSS'],
-    github: 'https://github.com/Simon-Keya/Kelvisan-Electrical-Networks',
-    live: 'https://kelvisan-electrical-networks-ltd.vercel.app',
-    category: 'Business'
-  },
+
   {
   id: 3,
   title: "SMANS",

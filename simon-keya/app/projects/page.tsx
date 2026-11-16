@@ -2,6 +2,7 @@
 
 import { motion, Variants } from 'framer-motion';
 import Projects from '../../components/Projects';
+import ThemeToggle from '@/components/ThemeToggle';
 
 // Framer Motion variants for page transition.
 // The 'ease' property has been removed to fix the TypeScript error.
@@ -13,8 +14,10 @@ const pageVariants: Variants = {
 
 export default function ProjectsPage() {
   return (
+    <div className="projects-index-page">
+    <div className="projects-index-toolbar"><a href="/" className="wordmark">SK<span>.</span></a><ThemeToggle /></div>
     <motion.main
-      className="min-h-screen bg-white"
+      className="projects-index-page min-h-screen"
       initial="initial"
       animate="animate"
       exit="exit"
@@ -24,5 +27,6 @@ export default function ProjectsPage() {
     >
       <Projects />
     </motion.main>
+    </div>
   );
 }

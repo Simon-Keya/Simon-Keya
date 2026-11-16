@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import ThemeToggle from '@/components/ThemeToggle'
 
 const caseStudies: Record<string, { number: string; name: string; category: string; summary: string; role: string; context: string; architecture: string[]; engineering: string[]; status: string; considerations: string[] }> = {
   restflow: {
@@ -40,7 +41,7 @@ const caseStudies: Record<string, { number: string; name: string; category: stri
     context: 'School operations involve distinct users and responsibilities. The product brings student, parent, teacher and administrator workflows into a common application experience.',
     architecture: ['Next.js and TypeScript frontend', 'Prisma data layer and relational database', 'Role-aware application routes and server actions', 'M-Pesa / Daraja payment integration in the inspected source'],
     engineering: ['Student and parent workflows', 'Academic and administrative management', 'Fee-related workflows', 'Role and ownership checks', 'Payment initiation and callback handling'],
-    status: 'Substantial full-stack implementation inspected; selected dependency, migration and payment-integrity concerns remain to be verified or addressed.',
+    status: 'In progress. The core full-stack implementation is being developed, with selected dependency, migration and payment-integrity concerns still requiring verification and refinement.',
     considerations: ['Do not describe payment processing as independently production-certified.', 'Dependency compatibility and migration deployment require further validation.']
   },
   'international-institute': {
@@ -53,11 +54,7 @@ const caseStudies: Record<string, { number: string; name: string; category: stri
     status: 'Earlier portfolio project restored from the supplied original website assets.',
     considerations: ['The screenshot is used as a visual reference; current live functionality has not been independently re-verified.']
   },
-  kelvisan: {
-    number: '09', name: 'Kelvisan', category: 'Electrical & network services website', summary: 'A company website presenting electrical, networking and related technology services.',
-    role: 'Website implementation and content presentation.', context: 'The website presents the company and its electrical, networking and technology service offering.',
-    architecture: ['Responsive company website', 'Service-led content structure'], engineering: ['Electrical and networking service presentation', 'Responsive page layout'], status: 'Earlier portfolio project restored from supplied screenshot assets.', considerations: ['Current live status has not been independently verified.']
-  },
+
   'the-accommodation-guru': {
     number: '06', name: 'The Accommodation Guru', category: 'Property discovery & inquiry experience',
     summary: 'A premium digital experience for a Kenya-based vacation-home agency, designed to help guests discover properties and help owners submit property enquiries.',
@@ -102,7 +99,7 @@ export default async function ProjectCaseStudy({ params }: { params: Promise<{ s
   const project = caseStudies[slug]
   if (!project) notFound()
   return <main className="case-page">
-    <header className="case-header"><Link href="/" className="wordmark">SK<span>.</span></Link><Link href="/#work" className="case-back">← BACK TO SELECTED WORK</Link></header>
+    <header className="case-header"><Link href="/" className="wordmark">SK<span>.</span></Link><div className="case-header-actions"><Link href="/#work" className="case-back">← BACK TO SELECTED WORK</Link><ThemeToggle /></div></header>
     <section className="case-hero"><div className="section-eyebrow">{project.number} / {project.category.toUpperCase()}</div><h1>{project.name}</h1><p>{project.summary}</p><div className="case-role"><span>MY FOCUS</span><b>{project.role}</b></div></section>
     <section className="case-content"><div className="case-section"><span>01 / CONTEXT</span><div><h2>The problem space</h2><p>{project.context}</p></div></div>
       <div className="case-section"><span>02 / ARCHITECTURE</span><div><h2>How it is put together</h2><ul>{project.architecture.map((item) => <li key={item}>{item}</li>)}</ul></div></div>

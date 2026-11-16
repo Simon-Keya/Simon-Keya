@@ -2,6 +2,7 @@
 
 import { motion, Variants } from 'framer-motion';
 import Contact from '../../components/Contact';
+import ThemeToggle from '@/components/ThemeToggle';
 
 // Framer Motion variants for page transition.
 // The 'ease' property has been removed to fix the TypeScript error.
@@ -13,8 +14,10 @@ const pageVariants: Variants = {
 
 export default function ContactPage() {
   return (
+    <div className="subpage-shell">
+    <div className="subpage-toolbar"><a href="/" className="wordmark">SK<span>.</span></a><ThemeToggle /></div>
     <motion.main
-      className="min-h-screen bg-white"
+      className="min-h-screen"
       initial="initial"
       animate="animate"
       exit="exit"
@@ -24,5 +27,6 @@ export default function ContactPage() {
     >
       <Contact />
     </motion.main>
+    </div>
   );
 }
