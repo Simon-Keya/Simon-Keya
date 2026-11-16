@@ -9,6 +9,33 @@ type Project = {
 
 const techClass = (name: string) => `tech-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`
 
+function ProjectVisual({ project }: { project: Project }) {
+  if (project.image) {
+    return (
+      <div className="project-visual project-image-wrap">
+        <Image src={project.image} alt={`${project.name} project preview`} fill sizes="(max-width: 640px) 100vw, 50vw" className="project-image" />
+      </div>
+    )
+  }
+
+  if (project.visual === 'ai') {
+    return <div className="project-visual visual-ai" aria-label={`${project.name} abstract preview`}><div className="ai-orbit orbit-one"/><div className="ai-orbit orbit-two"/><div className="ai-core">AI</div><div className="ai-caption">OPERATIONAL INTELLIGENCE<span>AUTHENTICATED TOOLING</span></div></div>
+  }
+  if (project.visual === 'go') {
+    return <div className="project-visual visual-go" aria-label={`${project.name} code preview`}><div className="code-window"><div className="code-dots"><i/><i/><i/><span>service.go</span></div><p><em>func</em> ProcessEvent(ctx Context) {'{'}</p><p className="code-indent">tx, err := db.BeginTx(ctx)</p><p className="code-indent"><em>if</em> err != nil {'{'} <em>return</em> err {'}'}</p><p className="code-indent">defer tx.Rollback()</p><p className="code-indent"><em>return</em> applyProjection(tx)</p><p>{'}'}</p><small>TRANSACTIONS · EVENTS · PARITY</small></div></div>
+  }
+  if (project.visual === 'meku') {
+    return <div className="project-visual visual-meku" aria-label="Meku Solutions visual preview"><div className="meku-mark">MEKU<span>.</span></div><div className="meku-copy">Technology<br/>that moves you.</div><div className="meku-strip">SOFTWARE · SYSTEMS · DIGITAL PRODUCTS</div></div>
+  }
+  if (project.visual === 'inari') {
+    return <div className="project-visual visual-inari" aria-label="InariKicchin visual preview"><div className="inari-label">INARI<span>KICCHIN</span></div><div className="inari-copy">A story told<br/>through flavour.</div><div className="inari-sub">ASIAN FUSION · NAIROBI</div></div>
+  }
+  if (project.visual === 'accommodation') {
+    return <div className="project-visual visual-accommodation" aria-label="Property discovery visual preview"><div className="stay-photo"><span>THE ACCOMMODATION GURU</span><b>Find your<br/>place to stay.</b></div><div className="stay-note">CURATED KENYA STAYS <span>DISCOVER · ENQUIRE</span></div></div>
+  }
+  return <div className="project-visual visual-restflow" aria-label={`${project.name} dashboard preview`}><div className="visual-topline"><span>{project.name.toUpperCase()}</span><span>OPERATIONS OVERVIEW</span></div><div className="visual-grid"><div className="visual-sidebar"><i/><i/><i/><i/></div><div className="visual-main"><div className="visual-stat-row"><b>INVENTORY</b><b>PRODUCTION</b><b>SALES</b></div><div className="visual-chart"><span/><span/><span/><span/><span/><span/><span/></div><div className="visual-lines"><i/><i/><i/></div></div></div></div>
+}
+
 const projects: Project[] = [
   {
     number: '01', name: 'RestFlow', category: 'Enterprise operations platform', type: 'FLAGSHIP · BACKEND SYSTEMS',
@@ -67,8 +94,8 @@ const projects: Project[] = [
     slug: 'inarikicchin', visual: 'inari', status: 'Client website', liveUrl: 'https://inaikicchinweb.vercel.app'
   },
   {
-    number: '09', name: 'Kelvisan', category: 'Hospitality management website', type: 'EARLIER WORK · WEB',
-    description: 'A hospitality-focused website presenting management services, operational capabilities and company information.',
+    number: '09', name: 'Kelvisan', category: 'Electrical & network services website', type: 'EARLIER WORK · WEB',
+    description: 'A company website presenting electrical, networking and related technology services for prospective clients.',
     contribution: 'Website implementation · Content presentation', stack: ['HTML', 'CSS', 'JavaScript'], slug: 'kelvisan', visual: 'accommodation', status: 'Earlier portfolio work', image: '/Kelvisan.png', liveUrl: 'https://kelvisan-electrical-networks-ltd.vercel.app'
   },
 ]

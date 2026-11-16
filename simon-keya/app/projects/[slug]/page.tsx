@@ -54,9 +54,9 @@ const caseStudies: Record<string, { number: string; name: string; category: stri
     considerations: ['The screenshot is used as a visual reference; current live functionality has not been independently re-verified.']
   },
   kelvisan: {
-    number: '09', name: 'Kelvisan', category: 'Hospitality management website', summary: 'A hospitality-focused website presenting management services and company information.',
-    role: 'Website implementation and content presentation.', context: 'The supplied screenshot presents hospitality management messaging and service information.',
-    architecture: ['Responsive company website', 'Service-led content structure'], engineering: ['Hospitality service presentation', 'Responsive page layout'], status: 'Earlier portfolio project restored from supplied screenshot assets.', considerations: ['Current live status has not been independently verified.']
+    number: '09', name: 'Kelvisan', category: 'Electrical & network services website', summary: 'A company website presenting electrical, networking and related technology services.',
+    role: 'Website implementation and content presentation.', context: 'The website presents the company and its electrical, networking and technology service offering.',
+    architecture: ['Responsive company website', 'Service-led content structure'], engineering: ['Electrical and networking service presentation', 'Responsive page layout'], status: 'Earlier portfolio project restored from supplied screenshot assets.', considerations: ['Current live status has not been independently verified.']
   },
   'the-accommodation-guru': {
     number: '06', name: 'The Accommodation Guru', category: 'Property discovery & inquiry experience',
