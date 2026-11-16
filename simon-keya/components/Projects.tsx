@@ -54,16 +54,6 @@ const projects: Project[] = [
   category: "System"
 },
   {
-    id:4,
-    title: 'Chipper',
-    image: '/Chipper.png',
-    description: 'An e-commerce website for purchasing and ordering products built using Next.js, Tailwind, Daisy UI, Nest.js, and PostgreSQL.',
-    stack: ['Next.js', 'Tailwind CSS', 'Express.js', 'PostgreSQL', 'TypeScript'],
-    github: 'https://github.com/Simon-Keya/Chipper',
-    live: 'https://chipper-gray.vercel.app',
-    category: 'E-commerce'
-  },
-  {
     id:5,
     title: 'Samuel Kanuna',
     image: '/samuel-kanuna.png',

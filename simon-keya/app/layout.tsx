@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   keywords: ['Simon Keya', 'Software Engineer', 'Backend Engineering', 'Full-stack Development', 'Go', 'Python', 'Applied AI', 'Next.js'],
   openGraph: { title: 'Simon Keya — Software Engineer', description: 'Building scalable digital products across backend systems, full-stack development and applied AI.', url: 'https://simon-keya.vercel.app', siteName: 'Simon Keya', type: 'website' },
   twitter: { card: 'summary_large_image', title: 'Simon Keya — Software Engineer', description: 'Building scalable digital products across backend systems, full-stack development and applied AI.' },
+  icons: { icon: '/logo.png', shortcut: '/logo.png', apple: '/logo.png' },
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
