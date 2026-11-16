@@ -43,8 +43,23 @@ const caseStudies: Record<string, { number: string; name: string; category: stri
     status: 'Substantial full-stack implementation inspected; selected dependency, migration and payment-integrity concerns remain to be verified or addressed.',
     considerations: ['Do not describe payment processing as independently production-certified.', 'Dependency compatibility and migration deployment require further validation.']
   },
+  'international-institute': {
+    number: '05', name: 'International Institute of Foreign Languages', category: 'Education & language institute website',
+    summary: 'An institutional website for a college, presenting its campus, learning environment and information for prospective students.',
+    role: 'Website implementation and responsive presentation.',
+    context: 'The site introduces the institute and helps prospective students understand the institution and its learning environment. The original portfolio screenshot is retained as the project visual.',
+    architecture: ['Responsive institutional website', 'Programme and campus information presentation', 'Content-led page structure'],
+    engineering: ['Institutional storytelling', 'Responsive page presentation', 'Prospective-student information architecture'],
+    status: 'Earlier portfolio project restored from the supplied original website assets.',
+    considerations: ['The screenshot is used as a visual reference; current live functionality has not been independently re-verified.']
+  },
+  kelvisan: {
+    number: '09', name: 'Kelvisan', category: 'Hospitality management website', summary: 'A hospitality-focused website presenting management services and company information.',
+    role: 'Website implementation and content presentation.', context: 'The supplied screenshot presents hospitality management messaging and service information.',
+    architecture: ['Responsive company website', 'Service-led content structure'], engineering: ['Hospitality service presentation', 'Responsive page layout'], status: 'Earlier portfolio project restored from supplied screenshot assets.', considerations: ['Current live status has not been independently verified.']
+  },
   'the-accommodation-guru': {
-    number: '05', name: 'The Accommodation Guru', category: 'Property discovery & inquiry experience',
+    number: '06', name: 'The Accommodation Guru', category: 'Property discovery & inquiry experience',
     summary: 'A premium digital experience for a Kenya-based vacation-home agency, designed to help guests discover properties and help owners submit property enquiries.',
     role: 'Product and frontend engineering across responsive website experiences, enquiry forms and conversion paths.',
     context: 'The product serves two audiences: guests exploring potential stays and property owners interested in listing their homes. The experience should make property information easy to understand and enquiries straightforward.',
@@ -54,7 +69,7 @@ const caseStudies: Record<string, { number: string; name: string; category: stri
     considerations: ['The owner form uses number of beds, not bedrooms.', 'Number of beds and additional property information are mandatory requirements.', 'Do not claim confirmed bookings, payment processing or property-management functionality.']
   },
   'meku-solutions': {
-    number: '06', name: 'Meku Solutions', category: 'Corporate digital experience',
+    number: '07', name: 'Meku Solutions', category: 'Corporate digital experience',
     summary: 'A corporate website experience for a technology company, designed to communicate its services and software products through a clear, polished digital presence.',
     role: 'Frontend and product presentation engineering, including responsive layouts, visual hierarchy and enquiry experience.',
     context: 'The website needs to feel credible and product-led while presenting a range of technology services and software capabilities. The redesign direction prioritises readable typography, clear contrast and authentic product imagery.',
@@ -64,7 +79,7 @@ const caseStudies: Record<string, { number: string; name: string; category: stri
     considerations: ['Keep the existing orange/yellow Meku identity, logo and favicon.', 'Do not distort or blur product screenshots.', 'Do not apply the personal portfolio blue identity to Meku.']
   },
   inarikicchin: {
-    number: '07', name: 'InariKicchin', category: 'Restaurant website & digital menu',
+    number: '08', name: 'InariKicchin', category: 'Restaurant website & digital menu',
     summary: 'A standalone restaurant website and QR-accessible menu for an Asian fusion dining brand.',
     role: 'Website experience and digital menu implementation, with attention to restaurant identity and responsive presentation.',
     context: 'The public website gives the restaurant a polished digital presence and a simple way for guests to browse the menu from a QR code. It is deliberately a focused information experience rather than an ordering platform.',
