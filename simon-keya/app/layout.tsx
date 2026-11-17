@@ -1,18 +1,39 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
+import { DM_Sans, Manrope } from 'next/font/google'
 import './globals.css'
-import ThemeProvider from '@/components/ThemeProvider'
+
+const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope', display: 'swap', weight: ['500', '600', '700', '800'] })
+const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans', display: 'swap' })
+
+const title = 'Simon Keya — Software Engineer'
+const description =
+  'Simon Keya is a software engineer building scalable digital products across backend systems, full-stack development and applied AI.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://simon-keya.vercel.app'),
-  title: { default: 'Simon Keya — Software Engineer', template: '%s | Simon Keya' },
-  description: 'Simon Keya is a software engineer building scalable digital products across backend systems, full-stack development and applied AI.',
+  title: { default: title, template: '%s | Simon Keya' },
+  description,
   keywords: ['Simon Keya', 'Software Engineer', 'Backend Engineering', 'Full-stack Development', 'Go', 'Python', 'Applied AI', 'Next.js'],
-  openGraph: { title: 'Simon Keya — Software Engineer', description: 'Building scalable digital products across backend systems, full-stack development and applied AI.', url: 'https://simon-keya.vercel.app', siteName: 'Simon Keya', type: 'website' },
-  twitter: { card: 'summary_large_image', title: 'Simon Keya — Software Engineer', description: 'Building scalable digital products across backend systems, full-stack development and applied AI.' },
+  openGraph: { title, description, url: 'https://simon-keya.vercel.app', siteName: 'Simon Keya', type: 'website', images: [{ url: '/projects/restflow.webp', width: 1350, height: 589, alt: 'RestFlow operations dashboard' }] },
+  twitter: { card: 'summary_large_image', title, description, images: ['/projects/restflow.webp'] },
   icons: { icon: '/logo.png', shortcut: '/logo.png', apple: '/logo.png' },
 }
 
+// Runs before first paint: no flash of the wrong theme.
+const themeScript = `(function(){try{var s=localStorage.getItem('theme');var d=s?s==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;var r=document.documentElement;if(d)r.classList.add('dark');var m=document.createElement('meta');m.name='theme-color';m.content=d?'#08121f':'#f6f8fb';document.head.appendChild(m)}catch(e){}})()`
+
 export default function RootLayout({ children }: { children: ReactNode }) {
-  return <html lang="en" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{__html: `try { const saved = localStorage.getItem('theme'); const dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches; if (dark) document.documentElement.classList.add('dark'); } catch (_) {}`}} /></head><body><ThemeProvider>{children}</ThemeProvider></body></html>
+  return (
+    <html lang="en" className={`${manrope.variable} ${dmSans.variable}`} suppressHydrationWarning>
+      <head>
+        <meta name="color-scheme" content="light dark" />
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
+      <body id="top">
+        <a className="skip-link" href="#main">Skip to content</a>
+        {children}
+      </body>
+    </html>
+  )
 }

@@ -8,4 +8,20 @@ import ArtSection from '@/components/ArtSection'
 import ContactSection from '@/components/ContactSection'
 import SiteFooter from '@/components/SiteFooter'
 
-export default function HomePage(){return <main><SiteHeader/><HeroSection/><IntroBand/><ProjectsSection/><CapabilitiesSection/><AboutSection/><ArtSection/><ContactSection/><SiteFooter/></main>}
+export default function HomePage() {
+  return (
+    <>
+      <SiteHeader home />
+      <main id="main">
+        <HeroSection />
+        <IntroBand />
+        <ProjectsSection />
+        <CapabilitiesSection />
+        <AboutSection />
+        <ArtSection />
+        <ContactSection />
+      </main>
+      <SiteFooter />
+    </>
+  )
+}

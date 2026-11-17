@@ -1,4 +1,44 @@
-'use client';
+import Link from 'next/link'
+import BrowserShot from './BrowserShot'
+import { ArrowRight, Download } from './Icons'
+import { contact, getProject, projects } from '@/lib/projects'
 
-import { motion } from 'framer-motion'
-export default function HeroSection(){return <section className="hero-section" id="home"><div className="hero-kicker"><span className="availability-dot"/> SOFTWARE ENGINEER <span className="kicker-divider">/</span> NAIROBI, KENYA</div><div className="hero-grid"><div className="hero-copy"><motion.h1 initial={{opacity:0,y:24}} animate={{opacity:1,y:0}} transition={{duration:.65}}>I build software<br/>that <span>moves work</span><br/>forward.</motion.h1><motion.div className="hero-bottom" initial={{opacity:0,y:16}} animate={{opacity:1,y:0}} transition={{delay:.18,duration:.6}}><p>I&apos;m Simon Keya — a software engineer working across backend systems, full-stack products and applied AI. I turn complex problems into useful, dependable software.</p><div className="hero-actions"><a className="button-primary" href="#work">Explore selected work →</a><a className="text-link" href="/files/Simon-Keya-Resume.pdf" target="_blank" rel="noreferrer">View résumé ↗</a></div></motion.div></div><div className="hero-aside"><div className="hero-index">01 <span>— 04</span></div><div className="hero-graphic"><div className="graphic-ring ring-a"/><div className="graphic-ring ring-b"/><div className="graphic-core">SK<span>.</span></div><div className="graphic-label label-top">ENGINEERING</div><div className="graphic-label label-bottom">IDEAS INTO SYSTEMS</div></div><p className="aside-note">Thoughtful engineering.<br/>Practical outcomes.</p></div></div><div className="hero-foot"><span>SCROLL TO EXPLORE</span><span className="scroll-line"/><span>01 / 04</span></div></section>}
+export default function HeroSection() {
+  const flagship = getProject('restflow')!
+  return (
+    <section className="hero" id="home" aria-labelledby="hero-title">
+      <div className="wrap hero-grid">
+        <div>
+          <p className="status-pill reveal" style={{ '--i': 0 } as React.CSSProperties}>
+            <span className="status-dot" aria-hidden="true" />
+            Open to engineering roles and collaborations · {contact.location}
+          </p>
+          <h1 id="hero-title" className="reveal" style={{ '--i': 1 } as React.CSSProperties}>
+            I build software that <em>moves work forward.</em>
+          </h1>
+          <p className="hero-lead reveal" style={{ '--i': 2 } as React.CSSProperties}>
+            I’m Simon Keya, a software engineer working across backend systems, full-stack products and applied AI. I turn complex problems into useful, dependable software.
+          </p>
+          <div className="hero-actions reveal" style={{ '--i': 3 } as React.CSSProperties}>
+            <Link className="btn btn-primary" href="/#work">Explore selected work <ArrowRight /></Link>
+            <a className="btn btn-secondary" href={contact.resume} target="_blank" rel="noopener noreferrer">Résumé <Download /><span className="sr-only"> (PDF, opens in a new tab)</span></a>
+          </div>
+          <dl className="proof reveal" style={{ '--i': 4 } as React.CSSProperties}>
+            <div><dd>{projects.length} projects</dd><dt>in selected work</dt></div>
+            <div><dd>Go · Python · TS</dd><dt>core languages</dt></div>
+            <div><dd>Backend to AI</dd><dt>range of work</dt></div>
+          </dl>
+        </div>
+
+        <div className="hero-visual reveal" style={{ '--i': 2 } as React.CSSProperties}>
+          <BrowserShot image={flagship.image!} url={flagship.liveUrl} sizes="(max-width: 980px) 100vw, 640px" priority />
+          <div className="hero-chip">
+            <p className="label"><span className="status-dot" aria-hidden="true" /> Currently building</p>
+            <b>RestFlow</b>
+            <span>Operations platform · NestJS, Go, PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

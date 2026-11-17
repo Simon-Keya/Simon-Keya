@@ -1,1 +1,24 @@
-export default function ArtSection(){return <section className="art-section section-wrap" id="art"><div className="art-copy"><div className="section-eyebrow">05 / BEYOND THE CODE</div><h2>Engineering meets<br/><span>visual imagination.</span></h2><p>Outside software development, I explore painting, drawing and digital art. Making art gives me another way to think about composition, colour, balance and visual storytelling — sensibilities I bring into interface design and the way I present digital products.</p><p>I see art and engineering as complementary practices: one strengthens visual expression, the other turns ideas into systems people can use.</p><a className="button-primary" href="https://keyart.netlify.app" target="_blank" rel="noopener noreferrer">Explore my art portfolio ↗</a></div><a className="art-feature" href="https://keyart.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Keyart art portfolio"><div className="art-artwork"><span className="art-orbit art-orbit-a"/><span className="art-orbit art-orbit-b"/><span className="art-monogram">K<span>.</span></span><span className="art-caption">KEYART / ART & EXPRESSION</span></div><div className="art-feature-foot"><span>PAINTING · DRAWING · DIGITAL DESIGN</span><b>VIEW KEYART ↗</b></div></a></section>}
+import BrowserShot from './BrowserShot'
+import { ArrowUpRight } from './Icons'
+import { archive, contact } from '@/lib/projects'
+
+export default function ArtSection() {
+  const keyart = archive.find((a) => a.name === 'Keyart')!
+  return (
+    <section className="section art" id="art" aria-labelledby="art-title">
+      <div className="wrap art-grid">
+        <div>
+          <p className="eyebrow">Beyond the code</p>
+          <h2 id="art-title">Engineering meets <span>visual imagination.</span></h2>
+          <p>Outside software development, I explore painting, drawing and digital art. Making art gives me another way to think about composition, colour, balance and visual storytelling, sensibilities I bring into interface design and the way I present digital products.</p>
+          <p>I see art and engineering as complementary practices: one strengthens visual expression, the other turns ideas into systems people can use.</p>
+          <a className="btn btn-primary" href={contact.art} target="_blank" rel="noopener noreferrer">Explore my art portfolio <ArrowUpRight /><span className="sr-only"> (opens in a new tab)</span></a>
+        </div>
+        <a className="art-feature" href={contact.art} target="_blank" rel="noopener noreferrer" aria-label="Visit Keyart, my art portfolio (opens in a new tab)">
+          <BrowserShot image={keyart.image} url={keyart.liveUrl} sizes="(max-width: 900px) 100vw, 640px" />
+          <div className="art-caption"><span>Painting, drawing and digital design</span><b>Keyart</b></div>
+        </a>
+      </div>
+    </section>
+  )
+}
