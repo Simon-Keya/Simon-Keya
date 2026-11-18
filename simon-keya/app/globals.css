@@ -360,7 +360,7 @@ button {
   top: 0;
   z-index: 100;
   height: var(--header-h);
-  background: color-mix(in srgb, var(--bg) 86%, transparent);
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
   -webkit-backdrop-filter: saturate(1.4) blur(14px);
   backdrop-filter: saturate(1.4) blur(14px);
   border-bottom: 1px solid var(--line);
@@ -417,25 +417,42 @@ html.dark .brand img {
 }
 
 .nav-link {
+  position: relative;
   display: inline-flex;
   align-items: center;
-  min-height: 44px;
-  padding: 0 14px;
-  border-radius: var(--radius-sm);
+  min-height: 40px;
+  padding: 0 15px;
+  border: 1px solid transparent;
+  border-radius: 999px;
   color: var(--muted);
-  font-size: 0.9375rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  transition: color 0.2s, background-color 0.2s;
+  white-space: nowrap;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
-.nav-link:hover,
-.nav-link[aria-current='true'] {
+.nav-link:hover {
   color: var(--ink);
-  background: var(--surface-2);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
 }
 
 .nav-link[aria-current='true'] {
   color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 11%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 26%, transparent);
+}
+
+.nav-link[aria-current='true']::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  width: 12px;
+  height: 2px;
+  border-radius: 99px;
+  background: currentColor;
+  transform: translateX(-50%);
+  opacity: .9;
 }
 
 .header-actions {
@@ -2129,22 +2146,30 @@ html[data-theme-changing] *::after {
   --band-accent: #64c7f4;
 }
 html.dark {
-  --bg: #071523;
-  --surface: #0d2033;
-  --surface-2: #10283f;
-  --ink: #f5f8fc;
-  --muted: #c0cede;
-  --line: #294158;
-  --accent: #62c8f4;
-  --accent-hover: #91dcff;
-  --on-accent: #061522;
-  --accent-soft: #15364f;
-  --band: #040d17;
-  --band-2: #091a2a;
+  color-scheme: dark;
+  /* One continuous midnight-engineering palette across every section. */
+  --bg: #0b1522;
+  --surface: #101d2b;
+  --surface-2: #142638;
+  --ink: #f4f7fb;
+  --muted: #aebdcd;
+  --line: #263b50;
+  --accent: #25b8e8;
+  --accent-hover: #68d2f2;
+  --on-accent: #041521;
+  --accent-soft: #123247;
+  --warm: #e5c58c;
+  --warm-soft: #302a20;
+  --success: #72d6a1;
+  --focus: #7bd8f5;
+  --band: #070d15;
+  --band-2: #0b1522;
   --band-ink: #f5f8fc;
-  --band-muted: #c0cede;
-  --band-line: rgba(192, 206, 222, .19);
-  --band-accent: #62c8f4;
+  --band-muted: #b8c5d3;
+  --band-line: rgba(184, 197, 211, .18);
+  --band-accent: #25b8e8;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .22), 0 5px 18px rgba(0, 0, 0, .12);
+  --shadow-md: 0 18px 42px rgba(0, 0, 0, .28);
 }
 
 .hero-editorial {
@@ -2155,7 +2180,7 @@ html.dark {
   align-items: center;
   padding-block: clamp(76px, 10vw, 132px) clamp(40px, 6vw, 72px);
   color: #f5f8fc;
-  background: #070d15;
+  background: #0b1522;
 }
 html:not(.dark) .hero-editorial { background: #0b1522; }
 .hero-grid-pattern {
@@ -2283,4 +2308,150 @@ html:not(.dark) .hero-editorial { background: #0b1522; }
   .project-grid { grid-template-columns: 1fr; }
   .project-body { padding: 17px; }
   .about-visual { height: 260px; }
+}
+
+/* ---------- Unified midnight engineering canvas: site-wide dark theme ---------- */
+html.dark {
+  --bg: #0b1522;
+  --surface: #101d2b;
+  --surface-2: #142638;
+  --ink: #f4f7fb;
+  --muted: #b8c6d5;
+  --line: rgba(150, 180, 210, .16);
+  --accent: #25b8e8;
+  --accent-hover: #68d2f2;
+  --accent-soft: rgba(37, 184, 232, .12);
+  --on-accent: #041521;
+  --band: #0b1522;
+  --band-2: #101d2b;
+  --band-ink: #f4f7fb;
+  --band-muted: #b8c6d5;
+  --band-line: rgba(150, 180, 210, .16);
+  --band-accent: #25b8e8;
+  background: #0b1522;
+}
+
+html.dark body {
+  position: relative;
+  isolation: isolate;
+  background: transparent;
+  color: var(--ink);
+}
+
+/* One continuous, subtle technical grid behind every section and route. */
+html.dark body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: #0b1522;
+  background-image:
+    linear-gradient(rgba(150, 180, 210, .055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(150, 180, 210, .055) 1px, transparent 1px);
+  background-size: 34px 34px;
+}
+
+/* Remove the old alternating dark/light bands: the hero canvas is now global. */
+html.dark .intro-band,
+html.dark .intro,
+html.dark .projects,
+html.dark .capabilities,
+html.dark .about,
+html.dark .foundations,
+html.dark .art,
+html.dark .contact,
+html.dark .site-footer,
+html.dark .case-hero,
+html.dark .case-cta,
+html.dark .page-hero,
+html.dark .section {
+  background: transparent;
+  color: var(--ink);
+}
+
+html.dark .contact {
+  background-image: radial-gradient(ellipse 55% 60% at 88% 8%, rgba(15, 119, 181, .12), transparent 70%);
+}
+
+html.dark .site-header,
+html.dark .header-inner {
+  background: rgba(11, 21, 34, .88);
+  border-color: var(--line);
+  backdrop-filter: blur(16px);
+}
+
+/* Panels remain visible, but use the same midnight/slate language. */
+html.dark .project-card,
+html.dark .cap-card,
+html.dark .foundation-grid li,
+html.dark .about-visual,
+html.dark .about-node,
+html.dark .art-feature,
+html.dark .case-cta .wrap,
+html.dark .meta,
+html.dark .case-cover,
+html.dark .browser,
+html.dark .archive-grid .project-card {
+  background-color: rgba(16, 29, 43, .82);
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+html.dark .project-card:hover,
+html.dark .foundation-grid li:hover,
+html.dark .about-node:hover {
+  border-color: rgba(37, 184, 232, .42);
+}
+
+html.dark .project-summary,
+html.dark .project-role,
+html.dark .cap-row p,
+html.dark .about-copy p,
+html.dark .art p,
+html.dark .case-section p,
+html.dark .case-section li,
+html.dark .section-head p {
+  color: var(--muted);
+}
+
+html.dark .hero-grid-pattern {
+  opacity: .42;
+}
+
+html.dark .hero-editorial {
+  background: transparent;
+}
+
+html.dark .contact h2,
+html.dark .contact-row p,
+html.dark .contact-links a,
+html.dark .site-footer,
+html.dark .footer-brand {
+  color: var(--band-ink);
+}
+
+html.dark .contact-email > a:hover,
+html.dark .contact-links a:hover,
+html.dark .site-footer a:hover {
+  color: var(--accent);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  html.dark .site-header,
+  html.dark .header-inner {
+    backdrop-filter: none;
+    background: #0b1522;
+  }
+}
+html.dark .band,
+html.dark .on-band,
+html.dark .intro,
+html.dark .case-cta,
+html.dark .not-found {
+  background: transparent;
+  color: var(--band-ink);
+}
+html.dark .site-header {
+  background: rgba(11, 21, 34, .88);
 }

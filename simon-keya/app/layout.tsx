@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 }
 
 // Runs before first paint: no flash of the wrong theme.
-const themeScript = `(function(){try{var s=localStorage.getItem('theme');var d=s?s==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;var r=document.documentElement;if(d)r.classList.add('dark');var m=document.createElement('meta');m.name='theme-color';m.content=d?'#0b1d31':'#fbfcfe';document.head.appendChild(m)}catch(e){}})()`
+const themeScript = `(function(){try{var s=localStorage.getItem('theme');var d=s?s==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;var r=document.documentElement;if(d)r.classList.add('dark');var m=document.createElement('meta');m.name='theme-color';m.content=d?'#0b1522':'#fbfcfe';document.head.appendChild(m)}catch(e){}})()`
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
