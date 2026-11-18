@@ -68,12 +68,12 @@ export const projects: Project[] = [
       context:
         'RestFlow tackles the complexity behind day-to-day operations. Stock movements change valuation, production consumes ingredients, recipes shape the cost of finished goods, and every sale has to stay consistent with inventory and reporting. The engineering challenge is making those workflows work together without losing their business meaning.',
       architecture: [
-        'NestJS and TypeScript API',
+        'Go is the intended primary backend and system of record, with migration progressing in evidence-led stages',
         'React and TypeScript application',
-        'PostgreSQL with Prisma data access',
+        'PostgreSQL data layer, with Prisma in the existing NestJS implementation',
+        'NestJS is the existing backend being assessed for staged migration or replacement',
         'Shop-scoped authentication and operational modules',
         'Event storage and projection-based workflows',
-        'A Go backend being developed as a staged migration path',
       ],
       engineering: [
         'Inventory, receiving and procurement workflows',
@@ -84,7 +84,7 @@ export const projects: Project[] = [
         'Tests covering costing, recipe calculations, event storage and other domain behaviour',
       ],
       status:
-        'The platform has a substantial working implementation. The Go migration and a full multi-tenant hierarchy are still in progress.',
+        'The platform has a substantial working implementation. Go is the target primary backend; the migration and multi-tenant hierarchy are still in progress and are being approached incrementally to preserve existing behaviour and data.',
       openItems: [
         'Financial and inventory rules must stay exact through every change, so they are protected by tests.',
         'The Go service needs more concurrency and behavioural-parity work before it can replace the existing backend.',
@@ -148,7 +148,7 @@ export const projects: Project[] = [
     illustration: 'go',
     case: {
       intro:
-        'A Go backend developed alongside the existing operations API to explore service boundaries, event processing, transactional behaviour and a safe path towards backend migration.',
+        'The Go backend intended to become RestFlow’s primary backend and system of record, developed through staged parity work against the existing NestJS implementation.',
       role: 'Go backend implementation and architecture investigation within the wider RestFlow ecosystem.',
       context:
         'Replacing a mature backend is not a framework swap. Business rules, data contracts, event semantics and concurrency guarantees all have to be understood and preserved, so this work treats migration as a staged engineering process rather than a wholesale replacement.',

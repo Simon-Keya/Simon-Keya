@@ -8,28 +8,28 @@
 :root {
   color-scheme: light;
 
-  --bg: #f6f8fb;
+  --bg: #fbfcfe;
   --surface: #ffffff;
-  --surface-2: #eaf0f7;
-  --ink: #0d1a2d;
-  --muted: #4b5b73;
-  --line: #d3dce8;
-  --accent: #1456c2;
-  --accent-hover: #0d44a0;
+  --surface-2: #f0f4f9;
+  --ink: #101d31;
+  --muted: #43536b;
+  --line: #d7e0eb;
+  --accent: #174b83;
+  --accent-hover: #10385f;
   --on-accent: #ffffff;
-  --accent-soft: #e3edfc;
-  --warm: #85601b;
-  --warm-soft: #f6ecd7;
+  --accent-soft: #e7eff8;
+  --warm: #805b25;
+  --warm-soft: #f5eddf;
   --success: #1c7a4a;
   --focus: #1456c2;
 
   /* Always-dark bands (intro, contact, footer, foundations) */
-  --band: #0b1a30;
-  --band-2: #12294a;
-  --band-ink: #f2f6fc;
-  --band-muted: #b9c7db;
-  --band-line: rgba(185, 207, 238, 0.22);
-  --band-accent: #8fc0ff;
+  --band: #102d4b;
+  --band-2: #173d62;
+  --band-ink: #f5f8fc;
+  --band-muted: #c5d3e3;
+  --band-line: rgba(197, 215, 237, 0.24);
+  --band-accent: #a8cbed;
 
   /* Fixed artwork colours for illustrations */
   --art-bg: #0c1a2e;
@@ -58,23 +58,27 @@
 html.dark {
   color-scheme: dark;
 
-  --bg: #08121f;
-  --surface: #0f1d31;
-  --surface-2: #0b1727;
-  --ink: #eef3fa;
-  --muted: #adbbcf;
-  --line: #243850;
-  --accent: #7db4ff;
-  --accent-hover: #a3c9ff;
-  --on-accent: #06121f;
-  --accent-soft: #13294a;
-  --warm: #e0b865;
-  --warm-soft: #2a2213;
+  --bg: #0b1d31;
+  --surface: #112a43;
+  --surface-2: #0e243a;
+  --ink: #f3f7fc;
+  --muted: #c0cede;
+  --line: #2b4560;
+  --accent: #a9cbed;
+  --accent-hover: #c6def7;
+  --on-accent: #0b1d31;
+  --accent-soft: #1b3b5a;
+  --warm: #e4c58d;
+  --warm-soft: #382f21;
   --success: #5fd596;
   --focus: #a3c9ff;
 
-  --band: #050d19;
-  --band-2: #0c1d36;
+  --band: #07182a;
+  --band-2: #0c2239;
+  --band-ink: #f4f8fd;
+  --band-muted: #c0cede;
+  --band-line: rgba(192, 206, 222, 0.2);
+  --band-accent: #a9cbed;
 
   --shadow-sm: 0 0 0 1px rgba(255, 255, 255, 0.02);
   --shadow-md: 0 18px 40px rgba(0, 0, 0, 0.35);
@@ -936,13 +940,15 @@ html.dark .browser-view img {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(20px, 2.6vw, 36px);
+  gap: clamp(18px, 2vw, 26px);
+  align-items: stretch;
 }
 
 .project-card {
   position: relative;
   display: flex;
   flex-direction: column;
+  min-width: 0;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
@@ -978,7 +984,7 @@ html.dark .browser-view img {
   flex-direction: column;
   flex: 1;
   gap: 14px;
-  padding: clamp(20px, 2.4vw, 30px);
+  padding: clamp(18px, 1.8vw, 24px);
 }
 
 .project-top {
@@ -1011,7 +1017,8 @@ html.dark .browser-view img {
 
 .project-summary {
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 1.025rem;
+  line-height: 1.65;
   max-width: 62ch;
 }
 
@@ -1061,45 +1068,67 @@ html.dark .browser-view img {
 }
 
 .project-card--feature {
-  grid-column: 1 / -1;
+  grid-column: auto;
 }
 
-@media (min-width: 981px) {
-  .project-card--feature {
-    flex-direction: row;
-  }
+.project-media {
+  width: 100%;
+  overflow: hidden;
+  background: var(--surface-2);
+  aspect-ratio: 16 / 9;
+}
 
-  .project-card--feature .project-media {
-    flex: 1.15;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-  }
+.project-media .browser {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
 
-  .project-card--feature .browser {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 0;
-    border-right: 1px solid var(--line);
-  }
+.project-media .browser-bar {
+  flex: 0 0 28px;
+  min-height: 28px;
+}
 
-  .project-card--feature .browser-view {
-    flex: 1;
-    aspect-ratio: auto;
-    min-height: 340px;
-  }
+.project-media .browser-view {
+  flex: 1 1 auto;
+  min-height: 0;
+  aspect-ratio: auto;
+  overflow: hidden;
+}
 
-  .project-card--feature .project-body {
-    flex: 0.85;
-    justify-content: center;
-    padding: 40px;
-  }
+.project-media .illus {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  aspect-ratio: auto;
+}
+
+.project-media .browser-view img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.project-card .project-body {
+  gap: 12px;
 }
 
 @media (max-width: 760px) {
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-media,
+  .project-media .browser,
+  .project-media .illus,
+  .project-media .browser-view {
+    aspect-ratio: 16 / 9;
   }
 }
 
@@ -1355,7 +1384,7 @@ html.dark .browser-view img {
   border-bottom: 1px solid var(--line);
 }
 
-.path time {
+.path-index {
   color: var(--accent);
   font-family: var(--font-display);
   font-weight: 800;
@@ -1715,8 +1744,8 @@ html.dark .browser-view img {
   max-width: 62ch;
   margin-top: 22px;
   color: var(--muted);
-  font-size: 1.2rem;
-  line-height: 1.7;
+  font-size: clamp(1.125rem, 1.6vw, 1.3rem);
+  line-height: 1.75;
 }
 
 .meta {
@@ -1792,9 +1821,9 @@ html.dark .browser-view img {
 .case-section p,
 .case-section li {
   color: var(--muted);
-  font-size: 1.0625rem;
-  line-height: 1.8;
-  max-width: 68ch;
+  font-size: clamp(1.05rem, 1.2vw, 1.125rem);
+  line-height: 1.85;
+  max-width: 72ch;
 }
 
 .case-section li {
@@ -1929,8 +1958,24 @@ html.dark .browser-view img {
   padding-bottom: clamp(64px, 8vw, 112px);
 }
 
+.archive-grid .project-card .browser {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 .archive-grid .project-card .browser-view {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.archive-grid .project-card .browser-view img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .archive-actions {
@@ -2048,4 +2093,19 @@ html[data-theme-changing] *::after {
   .theme-switch {
     display: none;
   }
+}
+
+/* Portfolio refinement: readable type and predictable project proportions. */
+.project-eyebrow { font-size: 0.9rem; }
+.project-body h3 { font-size: clamp(1.45rem, 1.8vw, 1.75rem); }
+.project-role { font-size: 0.98rem; line-height: 1.6; }
+.meta dd { font-size: 1rem; }
+.meta dt { font-size: 0.925rem; }
+.case-section > h2 { font-size: 1.1rem; }
+@media (prefers-reduced-motion: reduce) { .project-card, .project-cta svg { transition: none !important; } }
+.path .path-index {
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 800;
 }

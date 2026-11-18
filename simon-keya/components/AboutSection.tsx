@@ -2,10 +2,10 @@ import Link from 'next/link'
 import { ArrowUpRight, FoundationIcons as I } from './Icons'
 
 const path = [
-  { year: '2025', role: 'Full-stack development', note: 'Responsive web apps, API integration and database performance for client projects.' },
-  { year: '2024', role: 'Backend development', note: 'Server-side applications in TypeScript, Node.js and Python with PostgreSQL.' },
-  { year: '2023', role: 'Front-end development', note: 'Interactive interfaces, design systems, performance and accessibility.' },
-  { year: '2022', role: 'Where it started', note: 'First web applications with HTML, CSS and JavaScript, and open-source contributions.' },
+  { year: '01', role: 'Understand the domain', note: 'Map the people, workflows, business rules and data before choosing an implementation.' },
+  { year: '02', role: 'Build the foundations', note: 'Shape clear APIs, data models and service boundaries that support the product.' },
+  { year: '03', role: 'Validate the behaviour', note: 'Use tests, regression checks and real workflow verification to protect what matters.' },
+  { year: '04', role: 'Improve in stages', note: 'Refine performance, reliability and architecture without risking working business processes.' },
 ]
 
 const foundations = [
@@ -27,12 +27,12 @@ export default function AboutSection() {
             <h2 id="about-title">Curious by nature. <span>Engineer by practice.</span></h2>
           </div>
           <div className="about-copy">
-            <p>I’m a software engineer with a background in Information Science and a practical, build-first approach to technology. My path began with Python and data-focused foundations before expanding into backend engineering, full-stack applications, cloud tooling and applied AI.</p>
-            <p>I enjoy understanding how a system works as a whole: the people using it, the rules behind it, the data it depends on and the details that make it reliable. I value learning broadly, then applying the right tools to the problem rather than forcing every project into the same stack.</p>
+            <p>I’m a software engineer with a background in Information Science and a practical, build-first approach to technology. My work is strongest in backend and API engineering, database-driven applications and full-stack product delivery, with practical experience in Go, TypeScript, Python and modern web tooling.</p>
+            <p>I enjoy understanding how a system works as a whole: the people using it, the rules behind it, the data it depends on and the details that make it reliable. I value clear engineering trade-offs, maintainable code and evidence-led change. I prefer to understand a system’s behaviour before changing it, especially when business-critical data and workflows are involved.</p>
             <ol className="path" aria-label="Career path">
               {path.map((s) => (
                 <li key={s.year}>
-                  <time dateTime={s.year}>{s.year}</time>
+                  <span className="path-index" aria-hidden="true">{s.year}</span>
                   <div><b>{s.role}</b><span>{s.note}</span></div>
                 </li>
               ))}

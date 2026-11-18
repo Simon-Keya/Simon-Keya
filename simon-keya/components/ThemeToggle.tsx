@@ -23,7 +23,7 @@ function apply(dark: boolean, animate: boolean) {
     meta.name = 'theme-color'
     document.head.appendChild(meta)
   }
-  meta.content = dark ? '#08121f' : '#f6f8fb'
+  meta.content = dark ? '#0b1d31' : '#fbfcfe'
   listeners.forEach((l) => l())
 }
 

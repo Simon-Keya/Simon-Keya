@@ -8,20 +8,20 @@ const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans', display
 
 const title = 'Simon Keya — Software Engineer'
 const description =
-  'Simon Keya is a software engineer building scalable digital products across backend systems, full-stack development and applied AI.'
+  'Simon Keya is a backend-focused software engineer building APIs, database-driven platforms and full-stack products with Go, TypeScript and Python.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://simon-keya.vercel.app'),
   title: { default: title, template: '%s | Simon Keya' },
   description,
-  keywords: ['Simon Keya', 'Software Engineer', 'Backend Engineering', 'Full-stack Development', 'Go', 'Python', 'Applied AI', 'Next.js'],
+  keywords: ['Simon Keya', 'Software Engineer', 'Backend Engineering', 'API Development', 'Full-stack Development', 'PostgreSQL', 'Go', 'Python', 'Applied AI', 'Next.js'],
   openGraph: { title, description, url: 'https://simon-keya.vercel.app', siteName: 'Simon Keya', type: 'website', images: [{ url: '/projects/restflow.webp', width: 1350, height: 589, alt: 'RestFlow operations dashboard' }] },
   twitter: { card: 'summary_large_image', title, description, images: ['/projects/restflow.webp'] },
   icons: { icon: '/logo.png', shortcut: '/logo.png', apple: '/logo.png' },
 }
 
 // Runs before first paint: no flash of the wrong theme.
-const themeScript = `(function(){try{var s=localStorage.getItem('theme');var d=s?s==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;var r=document.documentElement;if(d)r.classList.add('dark');var m=document.createElement('meta');m.name='theme-color';m.content=d?'#08121f':'#f6f8fb';document.head.appendChild(m)}catch(e){}})()`
+const themeScript = `(function(){try{var s=localStorage.getItem('theme');var d=s?s==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;var r=document.documentElement;if(d)r.classList.add('dark');var m=document.createElement('meta');m.name='theme-color';m.content=d?'#0b1d31':'#fbfcfe';document.head.appendChild(m)}catch(e){}})()`
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

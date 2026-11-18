@@ -17,7 +17,7 @@ export default function HeroSection() {
             I build software that <em>moves work forward.</em>
           </h1>
           <p className="hero-lead reveal" style={{ '--i': 2 } as React.CSSProperties}>
-            I’m Simon Keya, a software engineer working across backend systems, full-stack products and applied AI. I turn complex problems into useful, dependable software.
+            I’m Simon Keya, a backend-focused software engineer building APIs, data-driven platforms and full-stack products. My work spans Go, TypeScript and Python, with a focus on business logic, reliable data flows and practical system design.
           </p>
           <div className="hero-actions reveal" style={{ '--i': 3 } as React.CSSProperties}>
             <Link className="btn btn-primary" href="/#work">Explore selected work <ArrowRight /></Link>
@@ -26,7 +26,7 @@ export default function HeroSection() {
           <dl className="proof reveal" style={{ '--i': 4 } as React.CSSProperties}>
             <div><dd>{projects.length} projects</dd><dt>in selected work</dt></div>
             <div><dd>Go · Python · TS</dd><dt>core languages</dt></div>
-            <div><dd>Backend to AI</dd><dt>range of work</dt></div>
+            <div><dd>APIs · Data · Systems</dd><dt>engineering focus</dt></div>
           </dl>
         </div>
 

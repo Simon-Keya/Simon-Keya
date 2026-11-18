@@ -1,9 +1,9 @@
 const groups = [
-  { title: 'Backend & API engineering', detail: 'Designing service boundaries, APIs, business rules, authentication and dependable application workflows.', skills: ['Go', 'Python', 'FastAPI', 'Django', 'Node.js', 'NestJS', 'REST APIs'] },
+  { title: 'Backend & API engineering', detail: 'Hands-on work designing APIs, service boundaries, authentication, business rules and dependable application workflows.', skills: ['Go', 'TypeScript', 'Node.js', 'NestJS', 'Python', 'FastAPI', 'REST APIs'] },
   { title: 'Frontend & product development', detail: 'Building responsive interfaces and complete user journeys across web and mobile products.', skills: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'React Native', 'Expo', 'Tailwind CSS'] },
-  { title: 'Databases & content platforms', detail: 'Working with relational and document data, schema design, querying, administration and content-driven experiences.', skills: ['PostgreSQL', 'MongoDB', 'Supabase', 'Prisma', 'TypeORM', 'pgAdmin', 'Sanity CMS', 'Redis'] },
-  { title: 'Cloud, DevOps & delivery', detail: 'Practical exposure to containerisation, cloud infrastructure and repeatable application delivery.', skills: ['Docker', 'Kubernetes', 'Google Cloud', 'Linux', 'CI/CD', 'Vercel', 'Netlify', 'Render'] },
-  { title: 'Data science & applied AI', detail: 'Using Python data tools for analysis and integrating language models with controlled application tools.', skills: ['NumPy', 'SciPy', 'Jupyter Notebook', 'Gemini API', 'OpenAI API', 'Prompt engineering', 'Tool calling'] },
+  { title: 'Databases & data modelling', detail: 'Designing relational schemas, migrations and application data access, with attention to integrity and business meaning.', skills: ['PostgreSQL', 'Prisma', 'TypeORM', 'MongoDB', 'Supabase', 'SQL', 'pgAdmin'] },
+  { title: 'DevOps & application delivery', detail: 'Deploying and troubleshooting applications, managing environments and using containers and hosted platforms in delivery workflows.', skills: ['Docker', 'Git', 'GitHub', 'Linux', 'CI/CD', 'Render', 'Netlify', 'Vercel'] },
+  { title: 'Applied AI & data tooling', detail: 'Integrating language models with authenticated application services and controlled tool-calling workflows; foundational Python data tooling.', skills: ['Gemini API', 'OpenAI API', 'Tool calling', 'Python', 'NumPy', 'SciPy', 'Jupyter Notebook'] },
 ]
 
 const learning = [
@@ -25,7 +25,7 @@ export default function CapabilitiesSection() {
             <p className="eyebrow">Capabilities</p>
             <h2 id="cap-title">Built across the stack.</h2>
           </div>
-          <p>A broad engineering toolkit shaped by hands-on product work, focused learning and continued experimentation.</p>
+          <p>A practical toolkit shaped by shipped product work, ongoing learning and careful separation between hands-on experience and areas still being developed.</p>
         </div>
 
         <ul className="cap-list">
