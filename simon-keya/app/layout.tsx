@@ -6,15 +6,15 @@ import './globals.css'
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope', display: 'swap', weight: ['500', '600', '700', '800'] })
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans', display: 'swap' })
 
-const title = 'Simon Keya — Software Engineer'
+const title = 'Simon Keya — Software Engineer | Scalable Digital Products'
 const description =
-  'Simon Keya is a backend-focused software engineer building APIs, database-driven platforms and full-stack products with Go, TypeScript and Python.'
+  'Simon Keya is a software engineer building scalable digital products, backend systems and full-stack applications, with experience in Go, TypeScript, Python and applied AI integration.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://simon-keya.vercel.app'),
   title: { default: title, template: '%s | Simon Keya' },
   description,
-  keywords: ['Simon Keya', 'Software Engineer', 'Backend Engineering', 'API Development', 'Full-stack Development', 'PostgreSQL', 'Go', 'Python', 'Applied AI', 'Next.js'],
+  keywords: ['Simon Keya', 'Software Engineer', 'Backend Engineering', 'API Development', 'Full-stack Development', 'Applied AI', 'Software Architecture', 'PostgreSQL', 'Go', 'Python', 'Applied AI', 'Next.js'],
   openGraph: { title, description, url: 'https://simon-keya.vercel.app', siteName: 'Simon Keya', type: 'website', images: [{ url: '/projects/restflow.webp', width: 1350, height: 589, alt: 'RestFlow operations dashboard' }] },
   twitter: { card: 'summary_large_image', title, description, images: ['/projects/restflow.webp'] },
   icons: { icon: '/logo.png', shortcut: '/logo.png', apple: '/logo.png' },

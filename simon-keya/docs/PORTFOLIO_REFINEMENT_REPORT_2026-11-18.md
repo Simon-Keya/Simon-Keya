@@ -1,27 +1,28 @@
-# Portfolio Refinement Report — 18 November 2026
+# Portfolio refinement report — 18 November 2026
 
 ## Source inspected
-`Simon-Keya-Portfolio-UIUX-Refined-2026-11-17.zip` (uploaded source archive).
 
-## Applied changes
-- Reworked the design tokens toward a crisp white light theme and deep marine-blue dark theme. Updated the initial theme script and browser theme-colour metadata to match.
-- Standardised selected-work cards into a consistent two-column desktop / one-column mobile grid with a shared 16:9 media region. Removed the oversized featured-card treatment.
-- Improved text sizing and line-height for project summaries, roles, case-study leads, metadata and detail-page body copy.
-- Refined the hero message toward backend-focused software engineering, APIs, data-driven platforms and system design.
-- Replaced the dated year-by-year timeline with a truthful engineering approach: understand the domain, build foundations, validate behaviour and improve in stages.
-- Tightened the capability groupings to distinguish practical backend/API, database, frontend, delivery and applied-AI experience. Advanced infrastructure technologies are not presented as core hands-on skills.
-- Updated RestFlow case-study architecture and status to state that Go is the intended primary backend/system of record, while NestJS is the existing backend being assessed for staged migration. Preserves the explicit qualification that parity/cutover remain in progress.
-- Added the full master refinement prompt to `docs/PORTFOLIO_MASTER_REFINEMENT_PROMPT_2026-11.md`.
+`Simon-Keya-Portfolio-Marine-Blue-Professional-Refinement-2026-11-18.zip` was extracted and used as the implementation baseline. The supplied screenshot (`Screenshot (367).png`) was used as the visual reference for the hero direction.
 
-## Confirmed in supplied source before this pass
-- SMANS already has status `In progress`.
-- No Kelvisan project entry was present in the active project catalogue or supplied project image directory.
+## Implemented
 
-## Verification status
-- Passed: CSS brace-balance sanity check.
-- Passed: edited TypeScript/TSX files have balanced-brace sanity checks (not a substitute for TypeScript compilation).
-- Passed: all 10 detected local `/projects` and `/files` asset references resolve to files under `public/`.
-- Passed: SMANS is marked `In progress` in the project data.
-- Passed: Kelvisan is absent from the active `lib/projects.ts` catalogue.
-- Not run: `npm ci` did not complete within the available execution window, so TypeScript, ESLint and Next.js production build could not be run (dependencies were not installed).
-- Not run: browser-based visual QA, including desktop/mobile screenshots and interactive theme switching. Please run locally before deploying.
+- Rebuilt the homepage hero as a centred, editorial engineering introduction with a subtle technical grid, cyan/blue emphasis, clear project/contact actions, résumé link and compact capability indicators.
+- Applied a coordinated light/dark token palette: white-led marine-blue light surfaces and deep marine/midnight dark surfaces. The hero intentionally retains the screenshot's dark editorial treatment in both themes; the theme switch continues to control the rest of the site.
+- Updated the primary positioning and metadata to: “Software Engineer | Building Scalable Digital Products” with the supporting AI-focused/backend/full-stack positioning reflected in the introduction.
+- Rebuilt the capabilities content into seven practical categories: backend, APIs, databases, frontend/mobile, architecture, applied AI, and testing/delivery. Kept cloud/security as continuing-learning areas rather than overstating them as established delivery skills.
+- Added an original CSS-based systems illustration to the About section. No fabricated personal portrait was introduced because the supplied assets did not contain a suitable professional headshot.
+- Changed selected-work cards to a consistent three-column desktop grid, two-column tablet grid and single-column mobile grid; reduced card padding, headings, metadata and chip sizing.
+- Kept SMANS marked “In progress”.
+- Confirmed Kelvisan does not appear in the active project data or archive in this baseline; no unrelated assets were removed.
+- Updated SEO title and description to match the revised professional positioning.
+
+## Existing project information preserved
+
+RestFlow continues to describe Go as the intended primary backend/system of record and NestJS as the existing backend undergoing staged, evidence-led migration. RestFlow Go remains marked as migration work in progress. No completed production cutover or unverified outcomes are claimed.
+
+## Verification
+
+- Source ZIP integrity: passed before extraction.
+- Kelvisan search across active source: no matches.
+- Existing project data, routes and asset references retained.
+- `npm ci --no-audit --no-fund` was attempted but timed out in the execution environment. Consequently TypeScript, ESLint, Next.js production build, and browser-based visual checks could not be run. These checks remain required on a machine where dependencies can be installed.

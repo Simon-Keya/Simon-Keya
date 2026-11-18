@@ -74,12 +74,7 @@ export default function ProjectsSection() {
         </div>
 
         <div className="project-grid">
-          {visible.map((p, i) => {
-            // Feature the flagship; let a lone last card span the row so the grid never ends with a gap.
-            const rest = visible.filter((v) => !v.featured).length
-            const lone = !p.featured && i === visible.length - 1 && rest % 2 === 1
-            return <Card key={p.slug} p={p} wide={!!p.featured || lone} />
-          })}
+          {visible.map((p) => <Card key={p.slug} p={p} wide={false} />)}
         </div>
 
         <div className="more-work">

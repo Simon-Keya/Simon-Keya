@@ -22,9 +22,17 @@ export default function AboutSection() {
     <section className="section about" id="about" aria-labelledby="about-title">
       <div className="wrap">
         <div className="about-grid">
-          <div>
+          <div className="about-intro">
             <p className="eyebrow">A little about me</p>
             <h2 id="about-title">Curious by nature. <span>Engineer by practice.</span></h2>
+            <div className="about-visual" aria-label="Abstract illustration representing connected software systems">
+              <div className="about-orbit orbit-one" /><div className="about-orbit orbit-two" />
+              <div className="about-node node-core"><span>SK</span><small>ENGINEERING</small></div>
+              <div className="about-node node-api"><b>API</b><small>Services</small></div>
+              <div className="about-node node-data"><b>DB</b><small>Data</small></div>
+              <div className="about-node node-ai"><b>AI</b><small>Applied</small></div>
+              <div className="about-visual-caption">SYSTEMS · DATA · PRODUCT</div>
+            </div>
           </div>
           <div className="about-copy">
             <p>I’m a software engineer with a background in Information Science and a practical, build-first approach to technology. My work is strongest in backend and API engineering, database-driven applications and full-stack product delivery, with practical experience in Go, TypeScript, Python and modern web tooling.</p>
